@@ -1,14 +1,8 @@
-# install.packages("tidyverse")
-# install.packages("rsconnect")
-# install.packages("shiny")
-# install.packages("stringr")
-# install.packages("magrittr")
-# install.packages("openxlsx")
+
 library(tidyverse)
 library(rsconnect)
 library(openxlsx)
-#install.packages("devtools")
-#devtools::install_github('UrbanInstitute/education-data-package-r')
+
 
 
 enrollment_files = list.files("C:/Users/Colton/Desktop/WOUApp/Enrollment", pattern = "*\\.zip", full.names = TRUE)

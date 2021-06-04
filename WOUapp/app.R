@@ -73,16 +73,49 @@ I compared the racial and ethnic diversity of each indicator to the racial and e
 Lastly, for faculty diversity, I compared the racial and ethnic diversity of faculty to the racial and ethnic diversity 
 of the state of Oregon as a whole."), 
                               
-                              tabPanel("Enrollment", "This tab depicts...",
-                                       hr(),
+                              tabPanel("Enrollment", 
+                                       img(src='Enrollment.png', align = "center"),
+                                     
+                                       h2("Enrollment"),
+"To examine racial and ethnic diversity in enrollment, I began by downloading Fall Enrollment data from IPEDS.
+Fall enrollment represents students enrolled for credit during the fall where credit means recognition of
+attendance or performance in an instructional activity (course or program) that can be applied by a recipient
+toward the requirements for a degree, diploma, certificate, or other formal award. Enrollment reported is of
+the institution's official fall reporting date or October 15.",
+br(),
+br(),
+
+"Next, to provide for a benchmark comparison, I downloaded population data from the American Community Survey
+for the state of Oregon. Pairing these two datasets will allow me to determine whether the racial and ethnic
+diversity at Western Oregon University aligns with the racial and ethnic diversity of the state of Oregon or 
+if there are groups that are underrepresented as compared to the population of Oregon. ",
+
+br(),
+br(),
+
+"Under-represented: When the population estimate is higher than the enrollment estimate, this suggests that
+a racial or ethnic group may be under-represented at WOU.",
+
+br(),
+br(),
+
+"Equally-represented: When the population estimate is equal (i.e. largely overlapping) to the enrollment
+estimate, this suggests that a racial or ethnic group is fairly equally represented at WOU.",
+br(),
+br(),
+"Over-represented: When the population estimate is lower than the enrollment estimate, this suggests that
+a racial or ethnic group may be over-represented at WOU.",
+hr(),
                                        selectInput("Year",
-                                                   "Year:",
-                                       choices = seq(2010, 2019)),
+                                                "Year:",
+                                                choices = seq(2010, 2019)),
                                        hr(),
                                        downloadButton('downloadenrollmentData', 'Download Enrollment Data'),
                                        plotOutput("plot_enrollment")),
                               
-                              tabPanel("Majors", "This tab depicts...",  
+                              tabPanel("Majors", 
+                                       img(src='Majors.png', align = "center"),
+                                       "This tab depicts...",  
                                        hr(),
                                        selectInput("Major",
                                                    "Major:",
@@ -97,16 +130,26 @@ of the state of Oregon as a whole."),
                                        hr(),
                                        downloadButton('downloadmajorsData', 'Download Majors Data'),
                                        plotOutput("plot_majors")),
-                              
-                              tabPanel("Completions", "This tab depicts...",  
+                              tabPanel("Graduations",
+                                       img(src='Graduation.png', align = "center"),
+                                       "This tab depicts...",  
                                        hr(),
                                        selectInput("Year3",
+                                                   "Year:",
+                                                   choices = seq(2010,2019,1)),
+                                       hr(),
+                                       downloadButton('downloadgraduationData', 'Download Graduation Data'),
+                                       plotOutput("plot_graduation")),
+                              tabPanel("Completions", 
+                                       img(src='Completions.png', align = "center"),
+                                       "This tab depicts...",  
+                                       hr(),
+                                       selectInput("Year4",
                                                    "Year:",
                                                    choices = seq(2012, 2019, 1)),
                                        hr(),
                                        downloadButton('downloadcompletionsData', 'Download Completions Data'),
                                        plotOutput("plot_completions")),
-                              tabPanel("Graduations"),
                               tabPanel("Faculty")) 
                                        )
         )
@@ -178,7 +221,7 @@ server <- function(input, output) {
      
      plot_reactive_completions = reactive({
          data_completionsgraph %>%
-             filter(year == input$Year3) %>%
+             filter(year == input$Year4) %>%
              filter(valuetype == "percent") %>%
              mutate(percent = as.numeric(value)*100) %T>%
              assign("completionsdatadl", ., .GlobalEnv) %>%
