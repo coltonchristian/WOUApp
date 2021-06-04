@@ -5,8 +5,7 @@ minimaltheme =
     theme(axis.line.x = element_line(),
           axis.line.y = element_line(),
           panel.grid.major = element_blank(),
-          panel.grid.minor = element_blank(),
-          plot.title = element_text(hjust = 0.5))
+          panel.grid.minor = element_blank())
 
 # Define UI for application that draws graphs
 
@@ -79,7 +78,6 @@ of the state of Oregon as a whole."),
                                                    "Year:",
                                        choices = seq(2010, 2019)),
                                        hr(),
-                                       downloadButton('downloadenrollmentData', 'Download Enrollment Data'),
                                        plotOutput("plot_enrollment")),
                               
                               tabPanel("Majors", "This tab depicts...",  
@@ -95,7 +93,6 @@ of the state of Oregon as a whole."),
                                                    "Year:",
                                                    choices = seq(2010, 2018, 2)),
                                        hr(),
-                                       downloadButton('downloadmajorsData', 'Download Majors Data'),
                                        plotOutput("plot_majors")),
                               
                               tabPanel("Completions", "This tab depicts...",  
@@ -104,7 +101,6 @@ of the state of Oregon as a whole."),
                                                    "Year:",
                                                    choices = seq(2012, 2019, 1)),
                                        hr(),
-                                       downloadButton('downloadcompletionsData', 'Download Completions Data'),
                                        plotOutput("plot_completions")),
                               tabPanel("Graduations"),
                               tabPanel("Faculty")) 
@@ -123,8 +119,7 @@ server <- function(input, output) {
         data_enrollmentgraph %>%
             filter(year == input$Year) %>%
             filter(valuetype == "percent") %>%
-            mutate(percent = as.numeric(value)*100) %T>%
-            assign("enrollmentdatadl", ., .GlobalEnv) %>%            
+            mutate(percent = as.numeric(value)*100) %>%
             ggplot(., aes(x=percent, y= race, group = source)) + 
             geom_line(aes(group = race)) +
             geom_point(aes(color = source)) +
@@ -136,15 +131,6 @@ server <- function(input, output) {
      
      output$plot_enrollment = renderPlot(plot_reactive_enrollment())
      
-     output$downloadenrollmentData <- downloadHandler(
-            filename = function() {
-              paste('data-enrollment-', Sys.Date(), '.csv', sep='')
-            },
-            content = function(con) {
-              write.csv(enrollmentdatadl, con)
-            }
-          )
-     
 #### Majors ####
      
      plot_reactive_majors = reactive({
@@ -152,8 +138,7 @@ server <- function(input, output) {
              filter(year == input$Year2) %>%
              filter(major == input$Major) %>%
              filter(valuetype == "percent") %>%
-             mutate(percent = as.numeric(value)*100) %T>%
-             assign("majorsdatadl", ., .GlobalEnv) %>%
+             mutate(percent = as.numeric(value)*100) %>%
              ggplot(., aes(x=percent, y= race, group = source)) + 
              geom_line(aes(group = race)) +
              geom_point(aes(color = source)) +
@@ -165,23 +150,13 @@ server <- function(input, output) {
      
      output$plot_majors = renderPlot(plot_reactive_majors())
      
-     output$downloadmajorsData <- downloadHandler(
-         filename = function() {
-             paste('data-majors-', Sys.Date(), '.csv', sep='')
-         },
-         content = function(con) {
-             write.csv(majorsdatadl, con)
-         }
-     )
-     
 #### Completions ####
      
      plot_reactive_completions = reactive({
          data_completionsgraph %>%
              filter(year == input$Year3) %>%
              filter(valuetype == "percent") %>%
-             mutate(percent = as.numeric(value)*100) %T>%
-             assign("completionsdatadl", ., .GlobalEnv) %>%
+             mutate(percent = as.numeric(value)*100) %>%
              ggplot(., aes(x=percent, y= race, group = source)) + 
              geom_line(aes(group = race)) +
              geom_point(aes(color = source)) +
@@ -192,15 +167,6 @@ server <- function(input, output) {
              minimaltheme})
      
      output$plot_completions = renderPlot(plot_reactive_completions())
-     
-     output$downloadcompletionsData <- downloadHandler(
-         filename = function() {
-             paste('data-completions-', Sys.Date(), '.csv', sep='')
-         },
-         content = function(con) {
-             write.csv(completionsdatadl, con)
-         }
-     )
     }
 
 shinyApp(ui = ui, server = server)
