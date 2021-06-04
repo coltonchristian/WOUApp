@@ -9,7 +9,7 @@ minimaltheme =
 
 # Define UI for application that draws graphs
 
-setwd("C:/Users/Colton/Desktop/WOUApp/WOUapp")
+# setwd("C:/Users/Colton/Desktop/WOUApp/WOUapp")
 
 enrollment = read.csv("2010-2019 Enrollment.csv") %>%
     filter(race != "Nonresident alien")
@@ -125,6 +125,7 @@ server <- function(input, output) {
             geom_point(aes(color = source)) +
             scale_color_manual(values = c("blue", "black")) +
             scale_x_continuous(breaks = seq(0, 100, 10), limits = c(0,100)) +
+            ggtitle("Enrollment") +
             theme_minimal() + 
             minimaltheme})
      
@@ -143,6 +144,7 @@ server <- function(input, output) {
              geom_point(aes(color = source)) +
              scale_color_manual(values = c("blue", "black")) +
              scale_x_continuous(breaks = seq(0, 100, 10), limits = c(0,100)) +
+             ggtitle("Majors") +
              theme_minimal() + 
              minimaltheme})
      
@@ -160,6 +162,7 @@ server <- function(input, output) {
              geom_point(aes(color = source)) +
              scale_color_manual(values = c("blue", "black")) +
              scale_x_continuous(breaks = seq(0, 100, 10), limits = c(0,100)) +
+             ggtitle("Completions") +
              theme_minimal() + 
              minimaltheme})
      
