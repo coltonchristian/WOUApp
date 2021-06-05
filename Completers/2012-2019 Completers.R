@@ -1,14 +1,15 @@
 #2011-2012 through 2018-2019
 #All Students Total
+#Number of students receiving awards/degrees, by race/ethnicity and gender
 
 library(tidyverse)
 library(stringr)
 
 setwd("C:/Users/Colton/Desktop/WOUApp")
 
-completions = read.csv("./Completions/Completions.csv")
+completers = read.csv("./Completers/Completers.csv")
 
-completions_clean = completions %>%
+completers_clean = completers %>%
   pivot_longer(!c(UnitID, Institution.Name)) %>%
   mutate(year = str_extract(name, "[0-9]{4}")) %>%
   mutate(race = str_extract(name, "(?:(?!.total).)*")) %>%
@@ -19,6 +20,6 @@ completions_clean = completions %>%
   mutate(percent = value/total) %>%
   mutate(race = ifelse(race == "Hispanic or Latino", "Hispanic", race))
 
-write.csv(completions_clean, "C:/Users/Colton/Desktop/WOUApp/WOUapp/2012-2019 Completions.csv")
+write.csv(completers_clean, "C:/Users/Colton/Desktop/WOUApp/WOUapp/2012-2019 Completers.csv")
 
          

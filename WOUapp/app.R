@@ -19,7 +19,7 @@ demographics = read.csv("2010-2019 Demographics.csv")
 
 majors = read.csv("2010-2018 Majors.csv")
 
-completions = read.csv("2012-2019 Completions.csv")
+completers = read.csv("2012-2019 Completers.csv")
 
 data_enrollmentgraph = enrollment %>%
     left_join(demographics, suffix = c(".enrollment", ".demographics"), by = c("race", "year")) %>%
@@ -35,9 +35,9 @@ data_majorsgraph = majors %>%
                  names_sep = "\\.", 
                  names_to = c("valuetype", "source"))
 
-data_completionsgraph = completions %>%
-    left_join(enrollment, suffix = c(".completions", ".enrollment"), by = c("race", "year")) %>%
-    select(year, race, ends_with("completions"), ends_with("enrollment"), -starts_with("X")) %>%
+data_completersgraph = completers %>%
+    left_join(enrollment, suffix = c(".completers", ".enrollment"), by = c("race", "year")) %>%
+    select(year, race, ends_with("completers"), ends_with("enrollment"), -starts_with("X")) %>%
     pivot_longer(c(contains("value"), contains("total"), contains("percent")),
                  names_sep = "\\.", 
                  names_to = c("valuetype", "source"))
@@ -68,8 +68,7 @@ br(),
 br(),
 "Depending on the step, a different comparison 
 target is used. For example, for Fall Enrollment, I compared the racial and ethnic diversity of the students 
-enrolled to the racial and ethnic diversity of the state of Oregon as a whole. For Majors, Completions, and Graduations,
-I compared the racial and ethnic diversity of each indicator to the racial and ethnic diversity of students enrolled. 
+enrolled to the racial and ethnic diversity of the state of Oregon as a whole. For Majors, Graduations, and Completers, I compared the racial and ethnic diversity of each indicator to the racial and ethnic diversity of students enrolled. 
 Lastly, for faculty diversity, I compared the racial and ethnic diversity of faculty to the racial and ethnic diversity 
 of the state of Oregon as a whole."), 
                               
@@ -146,7 +145,6 @@ br(),
 racial or ethnic group may be over-represented at WOU.",
 hr(),
 
-hr(),
                                        selectInput("Major",
                                                    "Major:",
                                        choices = c("Education",                                      
@@ -160,6 +158,7 @@ hr(),
                                        hr(),
                                        downloadButton('downloadmajorsData', 'Download Majors Data'),
                                        plotOutput("plot_majors")),
+                              
                               tabPanel("Graduations",
                                        img(src='Graduation.png', align = "center"),
                                        "This tab depicts...",  
@@ -167,19 +166,38 @@ hr(),
                                        selectInput("Year3",
                                                    "Year:",
                                                    choices = seq(2010,2019,1)),
-                                       hr(),
                                        downloadButton('downloadgraduationData', 'Download Graduation Data'),
                                        plotOutput("plot_graduation")),
-                              tabPanel("Completions", 
-                                       img(src='Completions.png', align = "center"),
-                                       "This tab depicts...",  
+
+                              tabPanel("Completers", 
+                                       img(src='Completers.png', align = "center"),
+                                       h2("Completers"),
+                                       "To examine racial and ethnic diversity in completers, I began by downloading data on completers from IPEDS. This metric is defined as the number of students receiving awards/degrees. This metric tends to be lower than completions because completions include all awards/degrees conferred, whereas for completers, each student is only counted once.",
+                                       br(),
+                                       br(),
+                                       "Again, to provide for a benchmark comparison, I used the fall enrollment data that was described previously. Pairing these two datasets will allow me to determine whether the racial and ethnic diversity for completers at Western Oregon University aligns with the racial and ethnic diversity of the students enrolled at Western Oregon University or if there are groups that are under- or over-represented as compared to those students enrolled.",
+                                       
+                                       br(),
+                                       br(),
+                                       
+                                       "Under-represented: When the enrollment estimate is higher than the completers estimate, this suggests that a racial or ethnic group may be under-represented for completers at WOU.",
+                                       
+                                       br(),
+                                       br(),
+                                       
+                                       "Equally-represented: When the enrollment estimate is equal (i.e. largely overlapping) to the completers estimate, this suggests that a racial or ethnic group is fairly equally represented for completers at WOU.",
+                                       br(),
+                                       br(),
+                                       "Over-represented: When the enrollment estimate is lower than the completers estimate, this suggests that a racial or ethnic group may be over-represented for completers at WOU.",
                                        hr(),
+                                       
                                        selectInput("Year4",
                                                    "Year:",
                                                    choices = seq(2012, 2019, 1)),
                                        hr(),
-                                       downloadButton('downloadcompletionsData', 'Download Completions Data'),
-                                       plotOutput("plot_completions")),
+                                       downloadButton('downloadcompletersData', 'Download Completers Data'),
+                                       plotOutput("plot_completers")),
+
                               tabPanel("Faculty")) 
                                        )
         )
@@ -247,31 +265,31 @@ server <- function(input, output) {
          }
      )
      
-#### Completions ####
+#### Completers ####
      
-     plot_reactive_completions = reactive({
-         data_completionsgraph %>%
+     plot_reactive_completers = reactive({
+         data_completersgraph %>%
              filter(year == input$Year4) %>%
              filter(valuetype == "percent") %>%
              mutate(percent = as.numeric(value)*100) %T>%
-             assign("completionsdatadl", ., .GlobalEnv) %>%
+             assign("completersdatadl", ., .GlobalEnv) %>%
              ggplot(., aes(x=percent, y= race, group = source)) + 
              geom_line(aes(group = race)) +
              geom_point(aes(color = source)) +
              scale_color_manual(values = c("blue", "black")) +
              scale_x_continuous(breaks = seq(0, 100, 10), limits = c(0,100)) +
-             ggtitle("Completions") +
+             ggtitle("Completers") +
              theme_minimal() + 
              minimaltheme})
      
-     output$plot_completions = renderPlot(plot_reactive_completions())
+     output$plot_completers = renderPlot(plot_reactive_completers())
      
-     output$downloadcompletionsData <- downloadHandler(
+     output$downloadcompletersData <- downloadHandler(
          filename = function() {
-             paste('data-completions-', Sys.Date(), '.csv', sep='')
+             paste('data-completers-', Sys.Date(), '.csv', sep='')
          },
          content = function(con) {
-             write.csv(completionsdatadl, con)
+             write.csv(completersdatadl, con)
          }
      )
     }
