@@ -88,7 +88,7 @@ br(),
 "Next, to provide for a benchmark comparison, I downloaded population data from the American Community Survey
 for the state of Oregon. Pairing these two datasets will allow me to determine whether the racial and ethnic
 diversity at Western Oregon University aligns with the racial and ethnic diversity of the state of Oregon or 
-if there are groups that are underrepresented as compared to the population of Oregon. ",
+if there are groups that are under- or over-represented as compared to the population of Oregon. ",
 
 br(),
 br(),
@@ -115,8 +115,38 @@ hr(),
                               
                               tabPanel("Majors", 
                                        img(src='Majors.png', align = "center"),
-                                       "This tab depicts...",  
-                                       hr(),
+                                       h2("Majors"),
+"To examine racial and ethnic diversity in major areas of study, I began by downloading data on major 
+programs of study from IPEDS. This data is broken out into five mean areas which include Education, 
+Biological Sciences Life Sciences, Mathematics, Physical Sciences, and Business Management and 
+Administrative Services.",
+br(),
+br(),
+"Next, to provide for a benchmark comparison, I used the fall enrollment data that was described previously. 
+Pairing these two datasets will allow me to determine whether the racial and ethnic diversity in major 
+programs of study at Western Oregon University aligns with the racial and ethnic diversity of the students 
+enrolled at Western Oregon University or if there are groups that are under- or over-represented as compared 
+to those students enrolled.",
+                                       
+br(),
+br(),
+
+"Under-represented: When the enrollment estimate is higher than the major estimate, this suggests that a
+racial or ethnic group may be under-represented in a major area of study at WOU.",
+
+br(),
+br(),
+
+"Equally-represented: When the enrollment estimate is equal (i.e. largely overlapping) to the major 
+estimate, this suggests that a racial or ethnic group is fairly equally represented in a major area of 
+study at WOU.",
+br(),
+br(),
+"Over-represented: When the enrollment estimate is lower than the major estimate, this suggests that a 
+racial or ethnic group may be over-represented at WOU.",
+hr(),
+
+hr(),
                                        selectInput("Major",
                                                    "Major:",
                                        choices = c("Education",                                      

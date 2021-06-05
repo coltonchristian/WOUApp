@@ -1,6 +1,6 @@
-#2011-2019
+# 2011-2019
 # Adjusted Cohort
-#All Students Total
+# All Students Total
 
 library(tidyverse)
 library(stringr)
