@@ -1,91 +1,81 @@
-"","unitid","institution.name","race","value","year","total","percent"
-"1",210429,"Western Oregon University","American Indian or Alaska Native",118,"2013",6177,0.019103124494091
-"2",210429,"Western Oregon University","Asian",178,"2013",6177,0.0288165776266796
-"3",210429,"Western Oregon University","Black or African American",190,"2013",6177,0.0307592682531973
-"4",210429,"Western Oregon University","Hispanic",581,"2013",6177,0.0940586045005666
-"5",210429,"Western Oregon University","Native Hawaiian or Other Pacific Islander",140,"2013",6177,0.0226647239760401
-"6",210429,"Western Oregon University","White",4359,"2013",6177,0.705682370082564
-"7",210429,"Western Oregon University","Two or more races",29,"2013",6177,0.00469483568075117
-"8",210429,"Western Oregon University","Race ethnicity unknown",255,"2013",6177,0.0412821758135017
-"9",210429,"Western Oregon University","Nonresident alien",327,"2013",6177,0.0529383195726081
-"10",210429,"Western Oregon University","American Indian or Alaska Native",58,"2019",4929,0.0117670927165754
-"11",210429,"Western Oregon University","Asian",188,"2019",4929,0.0381416108744167
-"12",210429,"Western Oregon University","Black or African American",150,"2019",4929,0.0304321363359708
-"13",210429,"Western Oregon University","Hispanic",918,"2019",4929,0.186244674376141
-"14",210429,"Western Oregon University","Native Hawaiian or Other Pacific Islander",92,"2019",4929,0.0186650436193954
-"15",210429,"Western Oregon University","White",3008,"2019",4929,0.610265773990668
-"16",210429,"Western Oregon University","Two or more races",177,"2019",4929,0.0359099208764455
-"17",210429,"Western Oregon University","Race ethnicity unknown",140,"2019",4929,0.0284033272469061
-"18",210429,"Western Oregon University","Nonresident alien",198,"2019",4929,0.0401704199634814
-"19",210429,"Western Oregon University","American Indian or Alaska Native",87,"2017",5336,0.016304347826087
-"20",210429,"Western Oregon University","Asian",231,"2017",5336,0.0432908545727136
-"21",210429,"Western Oregon University","Black or African American",184,"2017",5336,0.0344827586206897
-"22",210429,"Western Oregon University","Hispanic",793,"2017",5336,0.148613193403298
-"23",210429,"Western Oregon University","Native Hawaiian or Other Pacific Islander",139,"2017",5336,0.0260494752623688
-"24",210429,"Western Oregon University","White",3331,"2017",5336,0.624250374812594
-"25",210429,"Western Oregon University","Two or more races",21,"2017",5336,0.00393553223388306
-"26",210429,"Western Oregon University","Race ethnicity unknown",200,"2017",5336,0.0374812593703148
-"27",210429,"Western Oregon University","Nonresident alien",350,"2017",5336,0.065592203898051
-"28",210429,"Western Oregon University","American Indian or Alaska Native",90,"2010",6229,0.0144485471183175
-"29",210429,"Western Oregon University","Asian",120,"2010",6229,0.0192647294910901
-"30",210429,"Western Oregon University","Black or African American",158,"2010",6229,0.0253652271632686
-"31",210429,"Western Oregon University","Hispanic",634,"2010",6229,0.101781987477926
-"32",210429,"Western Oregon University","Native Hawaiian or Other Pacific Islander",73,"2010",6229,0.0117193771070798
-"33",210429,"Western Oregon University","White",4582,"2010",6229,0.735591587734789
-"34",210429,"Western Oregon University","Two or more races",156,"2010",6229,0.0250441483384171
-"35",210429,"Western Oregon University","Race ethnicity unknown",118,"2010",6229,0.0189436506662386
-"36",210429,"Western Oregon University","Nonresident alien",298,"2010",6229,0.0478407449028737
-"37",210429,"Western Oregon University","American Indian or Alaska Native",88,"2016",5382,0.0163507989594946
-"38",210429,"Western Oregon University","Asian",223,"2016",5382,0.0414344109996284
-"39",210429,"Western Oregon University","Black or African American",196,"2016",5382,0.0364176885916016
-"40",210429,"Western Oregon University","Hispanic",707,"2016",5382,0.131363805276849
-"41",210429,"Western Oregon University","Native Hawaiian or Other Pacific Islander",145,"2016",5382,0.02694165737644
-"42",210429,"Western Oregon University","White",3507,"2016",5382,0.651616499442586
-"43",210429,"Western Oregon University","Two or more races",8,"2016",5382,0.00148643626904496
-"44",210429,"Western Oregon University","Race ethnicity unknown",196,"2016",5382,0.0364176885916016
-"45",210429,"Western Oregon University","Nonresident alien",312,"2016",5382,0.0579710144927536
-"46",210429,"Western Oregon University","American Indian or Alaska Native",122,"2014",6049,0.0201686229128782
-"47",210429,"Western Oregon University","Asian",201,"2014",6049,0.033228632831873
-"48",210429,"Western Oregon University","Black or African American",190,"2014",6049,0.0314101504380889
-"49",210429,"Western Oregon University","Hispanic",469,"2014",6049,0.0775334766077038
-"50",210429,"Western Oregon University","Native Hawaiian or Other Pacific Islander",146,"2014",6049,0.0241362208629526
-"51",210429,"Western Oregon University","White",4205,"2014",6049,0.695156224169284
-"52",210429,"Western Oregon University","Two or more races",16,"2014",6049,0.00264506530004959
-"53",210429,"Western Oregon University","Race ethnicity unknown",333,"2014",6049,0.0550504215572822
-"54",210429,"Western Oregon University","Nonresident alien",367,"2014",6049,0.0606711853198876
-"55",210429,"Western Oregon University","American Indian or Alaska Native",114,"2011",6214,0.0183456710653363
-"56",210429,"Western Oregon University","Asian",140,"2011",6214,0.0225297714837464
-"57",210429,"Western Oregon University","Black or African American",166,"2011",6214,0.0267138719021564
-"58",210429,"Western Oregon University","Hispanic",652,"2011",6214,0.10492436433859
-"59",210429,"Western Oregon University","Native Hawaiian or Other Pacific Islander",101,"2011",6214,0.0162536208561313
-"60",210429,"Western Oregon University","White",4522,"2011",6214,0.727711618925008
-"61",210429,"Western Oregon University","Two or more races",103,"2011",6214,0.0165754747344706
-"62",210429,"Western Oregon University","Race ethnicity unknown",138,"2011",6214,0.0222079176054071
-"63",210429,"Western Oregon University","Nonresident alien",278,"2011",6214,0.0447376890891535
-"64",210429,"Western Oregon University","American Indian or Alaska Native",111,"2012",6184,0.0179495472186287
-"65",210429,"Western Oregon University","Asian",158,"2012",6184,0.0255498059508409
-"66",210429,"Western Oregon University","Black or African American",205,"2012",6184,0.033150064683053
-"67",210429,"Western Oregon University","Hispanic",601,"2012",6184,0.0971862871927555
-"68",210429,"Western Oregon University","Native Hawaiian or Other Pacific Islander",138,"2012",6184,0.0223156532988357
-"69",210429,"Western Oregon University","White",4437,"2012",6184,0.717496765847348
-"70",210429,"Western Oregon University","Two or more races",56,"2012",6184,0.00905562742561449
-"71",210429,"Western Oregon University","Race ethnicity unknown",192,"2012",6184,0.0310478654592497
-"72",210429,"Western Oregon University","Nonresident alien",286,"2012",6184,0.046248382923674
-"73",210429,"Western Oregon University","American Indian or Alaska Native",72,"2018",5185,0.0138862102217936
-"74",210429,"Western Oregon University","Asian",206,"2018",5185,0.0397299903567985
-"75",210429,"Western Oregon University","Black or African American",176,"2018",5185,0.0339440694310511
-"76",210429,"Western Oregon University","Hispanic",805,"2018",5185,0.155255544840887
-"77",210429,"Western Oregon University","Native Hawaiian or Other Pacific Islander",121,"2018",5185,0.0233365477338476
-"78",210429,"Western Oregon University","White",3189,"2018",5185,0.615043394406943
-"79",210429,"Western Oregon University","Two or more races",132,"2018",5185,0.0254580520732883
-"80",210429,"Western Oregon University","Race ethnicity unknown",186,"2018",5185,0.0358727097396336
-"81",210429,"Western Oregon University","Nonresident alien",298,"2018",5185,0.057473481195757
-"82",210429,"Western Oregon University","American Indian or Alaska Native",95,"2015",5445,0.0174471992653811
-"83",210429,"Western Oregon University","Asian",218,"2015",5445,0.0400367309458219
-"84",210429,"Western Oregon University","Black or African American",199,"2015",5445,0.0365472910927456
-"85",210429,"Western Oregon University","Hispanic",566,"2015",5445,0.103948576675849
-"86",210429,"Western Oregon University","Native Hawaiian or Other Pacific Islander",120,"2015",5445,0.0220385674931129
-"87",210429,"Western Oregon University","White",3658,"2015",5445,0.671808999081726
-"88",210429,"Western Oregon University","Two or more races",15,"2015",5445,0.00275482093663912
-"89",210429,"Western Oregon University","Race ethnicity unknown",249,"2015",5445,0.0457300275482094
-"90",210429,"Western Oregon University","Nonresident alien",325,"2015",5445,0.0596877869605142
+"","UnitID","Institution.Name","name","value","year","race","total","percent"
+"1",210429,"Western Oregon University","American.Indian.or.Alaska.Native.total..EF2019A..All.students.total.",58,"2019","American Indian or Alaska Native",4929,0.0117670927165754
+"2",210429,"Western Oregon University","Asian.total..EF2019A..All.students.total.",188,"2019","Asian",4929,0.0381416108744167
+"3",210429,"Western Oregon University","Black.or.African.American.total..EF2019A..All.students.total.",150,"2019","Black or African American",4929,0.0304321363359708
+"4",210429,"Western Oregon University","Hispanic.total..EF2019A..All.students.total.",918,"2019","Hispanic",4929,0.186244674376141
+"5",210429,"Western Oregon University","Native.Hawaiian.or.Other.Pacific.Islander.total..EF2019A..All.students.total.",92,"2019","Native Hawaiian or Other Pacific Islander",4929,0.0186650436193954
+"6",210429,"Western Oregon University","White.total..EF2019A..All.students.total.",3008,"2019","White",4929,0.610265773990668
+"7",210429,"Western Oregon University","Two.or.more.races.total..EF2019A..All.students.total.",177,"2019","Two or more races",4929,0.0359099208764455
+"8",210429,"Western Oregon University","Race.ethnicity.unknown.total..EF2019A..All.students.total.",140,"2019","Race ethnicity unknown",4929,0.0284033272469061
+"9",210429,"Western Oregon University","American.Indian.or.Alaska.Native.total..EF2018A_RV..All.students.total.",72,"2018","American Indian or Alaska Native",5185,0.0138862102217936
+"10",210429,"Western Oregon University","Asian.total..EF2018A_RV..All.students.total.",206,"2018","Asian",5185,0.0397299903567985
+"11",210429,"Western Oregon University","Black.or.African.American.total..EF2018A_RV..All.students.total.",176,"2018","Black or African American",5185,0.0339440694310511
+"12",210429,"Western Oregon University","Hispanic.total..EF2018A_RV..All.students.total.",805,"2018","Hispanic",5185,0.155255544840887
+"13",210429,"Western Oregon University","Native.Hawaiian.or.Other.Pacific.Islander.total..EF2018A_RV..All.students.total.",121,"2018","Native Hawaiian or Other Pacific Islander",5185,0.0233365477338476
+"14",210429,"Western Oregon University","White.total..EF2018A_RV..All.students.total.",3189,"2018","White",5185,0.615043394406943
+"15",210429,"Western Oregon University","Two.or.more.races.total..EF2018A_RV..All.students.total.",132,"2018","Two or more races",5185,0.0254580520732883
+"16",210429,"Western Oregon University","Race.ethnicity.unknown.total..EF2018A_RV..All.students.total.",186,"2018","Race ethnicity unknown",5185,0.0358727097396336
+"17",210429,"Western Oregon University","American.Indian.or.Alaska.Native.total..EF2017A_RV..All.students.total.",87,"2017","American Indian or Alaska Native",5336,0.016304347826087
+"18",210429,"Western Oregon University","Asian.total..EF2017A_RV..All.students.total.",231,"2017","Asian",5336,0.0432908545727136
+"19",210429,"Western Oregon University","Black.or.African.American.total..EF2017A_RV..All.students.total.",184,"2017","Black or African American",5336,0.0344827586206897
+"20",210429,"Western Oregon University","Hispanic.total..EF2017A_RV..All.students.total.",793,"2017","Hispanic",5336,0.148613193403298
+"21",210429,"Western Oregon University","Native.Hawaiian.or.Other.Pacific.Islander.total..EF2017A_RV..All.students.total.",139,"2017","Native Hawaiian or Other Pacific Islander",5336,0.0260494752623688
+"22",210429,"Western Oregon University","White.total..EF2017A_RV..All.students.total.",3331,"2017","White",5336,0.624250374812594
+"23",210429,"Western Oregon University","Two.or.more.races.total..EF2017A_RV..All.students.total.",21,"2017","Two or more races",5336,0.00393553223388306
+"24",210429,"Western Oregon University","Race.ethnicity.unknown.total..EF2017A_RV..All.students.total.",200,"2017","Race ethnicity unknown",5336,0.0374812593703148
+"25",210429,"Western Oregon University","American.Indian.or.Alaska.Native.total..EF2016A_RV..All.students.total.",88,"2016","American Indian or Alaska Native",5382,0.0163507989594946
+"26",210429,"Western Oregon University","Asian.total..EF2016A_RV..All.students.total.",223,"2016","Asian",5382,0.0414344109996284
+"27",210429,"Western Oregon University","Black.or.African.American.total..EF2016A_RV..All.students.total.",196,"2016","Black or African American",5382,0.0364176885916016
+"28",210429,"Western Oregon University","Hispanic.total..EF2016A_RV..All.students.total.",707,"2016","Hispanic",5382,0.131363805276849
+"29",210429,"Western Oregon University","Native.Hawaiian.or.Other.Pacific.Islander.total..EF2016A_RV..All.students.total.",145,"2016","Native Hawaiian or Other Pacific Islander",5382,0.02694165737644
+"30",210429,"Western Oregon University","White.total..EF2016A_RV..All.students.total.",3507,"2016","White",5382,0.651616499442586
+"31",210429,"Western Oregon University","Two.or.more.races.total..EF2016A_RV..All.students.total.",8,"2016","Two or more races",5382,0.00148643626904496
+"32",210429,"Western Oregon University","Race.ethnicity.unknown.total..EF2016A_RV..All.students.total.",196,"2016","Race ethnicity unknown",5382,0.0364176885916016
+"33",210429,"Western Oregon University","American.Indian.or.Alaska.Native.total..EF2015A_RV..All.students.total.",95,"2015","American Indian or Alaska Native",5445,0.0174471992653811
+"34",210429,"Western Oregon University","Asian.total..EF2015A_RV..All.students.total.",218,"2015","Asian",5445,0.0400367309458219
+"35",210429,"Western Oregon University","Black.or.African.American.total..EF2015A_RV..All.students.total.",199,"2015","Black or African American",5445,0.0365472910927456
+"36",210429,"Western Oregon University","Hispanic.total..EF2015A_RV..All.students.total.",566,"2015","Hispanic",5445,0.103948576675849
+"37",210429,"Western Oregon University","Native.Hawaiian.or.Other.Pacific.Islander.total..EF2015A_RV..All.students.total.",120,"2015","Native Hawaiian or Other Pacific Islander",5445,0.0220385674931129
+"38",210429,"Western Oregon University","White.total..EF2015A_RV..All.students.total.",3658,"2015","White",5445,0.671808999081726
+"39",210429,"Western Oregon University","Two.or.more.races.total..EF2015A_RV..All.students.total.",15,"2015","Two or more races",5445,0.00275482093663912
+"40",210429,"Western Oregon University","Race.ethnicity.unknown.total..EF2015A_RV..All.students.total.",249,"2015","Race ethnicity unknown",5445,0.0457300275482094
+"41",210429,"Western Oregon University","American.Indian.or.Alaska.Native.total..EF2014A_RV..All.students.total.",122,"2014","American Indian or Alaska Native",6049,0.0201686229128782
+"42",210429,"Western Oregon University","Asian.total..EF2014A_RV..All.students.total.",201,"2014","Asian",6049,0.033228632831873
+"43",210429,"Western Oregon University","Black.or.African.American.total..EF2014A_RV..All.students.total.",190,"2014","Black or African American",6049,0.0314101504380889
+"44",210429,"Western Oregon University","Hispanic.total..EF2014A_RV..All.students.total.",469,"2014","Hispanic",6049,0.0775334766077038
+"45",210429,"Western Oregon University","Native.Hawaiian.or.Other.Pacific.Islander.total..EF2014A_RV..All.students.total.",146,"2014","Native Hawaiian or Other Pacific Islander",6049,0.0241362208629526
+"46",210429,"Western Oregon University","White.total..EF2014A_RV..All.students.total.",4205,"2014","White",6049,0.695156224169284
+"47",210429,"Western Oregon University","Two.or.more.races.total..EF2014A_RV..All.students.total.",16,"2014","Two or more races",6049,0.00264506530004959
+"48",210429,"Western Oregon University","Race.ethnicity.unknown.total..EF2014A_RV..All.students.total.",333,"2014","Race ethnicity unknown",6049,0.0550504215572822
+"49",210429,"Western Oregon University","American.Indian.or.Alaska.Native.total..EF2013A_RV..All.students.total.",118,"2013","American Indian or Alaska Native",6177,0.019103124494091
+"50",210429,"Western Oregon University","Asian.total..EF2013A_RV..All.students.total.",178,"2013","Asian",6177,0.0288165776266796
+"51",210429,"Western Oregon University","Black.or.African.American.total..EF2013A_RV..All.students.total.",190,"2013","Black or African American",6177,0.0307592682531973
+"52",210429,"Western Oregon University","Hispanic.total..EF2013A_RV..All.students.total.",581,"2013","Hispanic",6177,0.0940586045005666
+"53",210429,"Western Oregon University","Native.Hawaiian.or.Other.Pacific.Islander.total..EF2013A_RV..All.students.total.",140,"2013","Native Hawaiian or Other Pacific Islander",6177,0.0226647239760401
+"54",210429,"Western Oregon University","White.total..EF2013A_RV..All.students.total.",4359,"2013","White",6177,0.705682370082564
+"55",210429,"Western Oregon University","Two.or.more.races.total..EF2013A_RV..All.students.total.",29,"2013","Two or more races",6177,0.00469483568075117
+"56",210429,"Western Oregon University","Race.ethnicity.unknown.total..EF2013A_RV..All.students.total.",255,"2013","Race ethnicity unknown",6177,0.0412821758135017
+"57",210429,"Western Oregon University","American.Indian.or.Alaska.Native.total..EF2012A_RV..All.students.total.",111,"2012","American Indian or Alaska Native",6184,0.0179495472186287
+"58",210429,"Western Oregon University","Asian.total..EF2012A_RV..All.students.total.",158,"2012","Asian",6184,0.0255498059508409
+"59",210429,"Western Oregon University","Black.or.African.American.total..EF2012A_RV..All.students.total.",205,"2012","Black or African American",6184,0.033150064683053
+"60",210429,"Western Oregon University","Hispanic.total..EF2012A_RV..All.students.total.",601,"2012","Hispanic",6184,0.0971862871927555
+"61",210429,"Western Oregon University","Native.Hawaiian.or.Other.Pacific.Islander.total..EF2012A_RV..All.students.total.",138,"2012","Native Hawaiian or Other Pacific Islander",6184,0.0223156532988357
+"62",210429,"Western Oregon University","White.total..EF2012A_RV..All.students.total.",4437,"2012","White",6184,0.717496765847348
+"63",210429,"Western Oregon University","Two.or.more.races.total..EF2012A_RV..All.students.total.",56,"2012","Two or more races",6184,0.00905562742561449
+"64",210429,"Western Oregon University","Race.ethnicity.unknown.total..EF2012A_RV..All.students.total.",192,"2012","Race ethnicity unknown",6184,0.0310478654592497
+"65",210429,"Western Oregon University","American.Indian.or.Alaska.Native.total..EF2011A_RV..All.students.total.",114,"2011","American Indian or Alaska Native",6214,0.0183456710653363
+"66",210429,"Western Oregon University","Asian.total..EF2011A_RV..All.students.total.",140,"2011","Asian",6214,0.0225297714837464
+"67",210429,"Western Oregon University","Black.or.African.American.total..EF2011A_RV..All.students.total.",166,"2011","Black or African American",6214,0.0267138719021564
+"68",210429,"Western Oregon University","Hispanic.total..EF2011A_RV..All.students.total.",652,"2011","Hispanic",6214,0.10492436433859
+"69",210429,"Western Oregon University","Native.Hawaiian.or.Other.Pacific.Islander.total..EF2011A_RV..All.students.total.",101,"2011","Native Hawaiian or Other Pacific Islander",6214,0.0162536208561313
+"70",210429,"Western Oregon University","White.total..EF2011A_RV..All.students.total.",4522,"2011","White",6214,0.727711618925008
+"71",210429,"Western Oregon University","Two.or.more.races.total..EF2011A_RV..All.students.total.",103,"2011","Two or more races",6214,0.0165754747344706
+"72",210429,"Western Oregon University","Race.ethnicity.unknown.total..EF2011A_RV..All.students.total.",138,"2011","Race ethnicity unknown",6214,0.0222079176054071
+"73",210429,"Western Oregon University","American.Indian.or.Alaska.Native.total..EF2010A_RV..All.students.total.",90,"2010","American Indian or Alaska Native",6229,0.0144485471183175
+"74",210429,"Western Oregon University","Asian.total..EF2010A_RV..All.students.total.",120,"2010","Asian",6229,0.0192647294910901
+"75",210429,"Western Oregon University","Black.or.African.American.total..EF2010A_RV..All.students.total.",158,"2010","Black or African American",6229,0.0253652271632686
+"76",210429,"Western Oregon University","Hispanic.total..EF2010A_RV..All.students.total.",634,"2010","Hispanic",6229,0.101781987477926
+"77",210429,"Western Oregon University","Native.Hawaiian.or.Other.Pacific.Islander.total..EF2010A_RV..All.students.total.",73,"2010","Native Hawaiian or Other Pacific Islander",6229,0.0117193771070798
+"78",210429,"Western Oregon University","White.total..EF2010A_RV..All.students.total.",4582,"2010","White",6229,0.735591587734789
+"79",210429,"Western Oregon University","Two.or.more.races.total..EF2010A_RV..All.students.total.",156,"2010","Two or more races",6229,0.0250441483384171
+"80",210429,"Western Oregon University","Race.ethnicity.unknown.total..EF2010A_RV..All.students.total.",118,"2010","Race ethnicity unknown",6229,0.0189436506662386

@@ -1,5 +1,6 @@
+# Graduation rate data within 150 percent of normal time - 4-year and 2-year institutions
 # 2011-2019
-# Adjusted Cohort
+# Completers within 150% of normal time
 # All Students Total
 
 library(tidyverse)
@@ -7,7 +8,7 @@ library(stringr)
 
 setwd("C:/Users/Colton/Desktop/WOUApp")
 
-graduations = read.csv("./Graduations/Graduations.csv")
+graduations = read.csv("./Graduates_150/Completers_Within150Percent.csv")
 
 graduations_clean = graduations %>%
   pivot_longer(!c(UnitID, Institution.Name)) %>%
@@ -19,6 +20,6 @@ graduations_clean = graduations %>%
   filter(!race %in% c("Grand")) %>%
   mutate(percent = value/total) 
 
-write.csv(graduations_clean, "C:/Users/Colton/Desktop/WOUApp/WOUapp/2011-2019 Graduations.csv")
+write.csv(graduations_clean, "C:/Users/Colton/Desktop/WOUApp/WOUapp/2011-2019 Graduates.csv")
 
          
