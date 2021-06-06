@@ -14,7 +14,7 @@ minimaltheme =
           plot.title = element_text(hjust = 0.5),
           plot.caption=element_text(hjust = 0))
 
- #setwd("C:/Users/Colton/Desktop/WOUApp/WOUapp")
+ setwd("C:/Users/Colton/Desktop/WOUApp/WOUapp")
 
 #### Pull in cleaned up data files downloaded from IPEDS and ACS #### 
 
@@ -37,7 +37,7 @@ data_enrollmentgraph = enrollment %>%
     left_join(demographics, suffix = c(".enrollment", ".demographics"), by = c("race", "year")) %>%
     select(year, race, ends_with("enrollment"), ends_with("demographics"), -starts_with("X")) %>%
     rowwise() %>%
-    mutate(sig = prop.test(x = c(value.enrollment, value.demographics), n = c(total.enrollment, total.demographics), correct = FALSE)$p.value) %>%
+    mutate(sig = prop.test(x = c(value.enrollment, value.demographics), n = c(total.enrollment, total.demographics))$p.value) %>%
     ungroup() %>%
     pivot_longer(c(contains("value"), contains("total"), contains("percent")),
                  names_sep = "\\.", 
@@ -48,7 +48,7 @@ data_majorsgraph = majors %>%
     left_join(enrollment, suffix = c(".major", ".enrollment"), by = c("race", "year")) %>%
     select(year, race, ends_with("major"), ends_with("enrollment"), -starts_with("X")) %>%
     rowwise() %>%
-    mutate(sig = prop.test(x = c(value.major, value.enrollment), n = c(total.major, total.enrollment), correct = FALSE)$p.value) %>%
+    mutate(sig = prop.test(x = c(value.major, value.enrollment), n = c(total.major, total.enrollment))$p.value) %>%
     ungroup() %>%
     pivot_longer(c(contains("value"), contains("total"), contains("percent")),
                  names_sep = "\\.", 
@@ -58,7 +58,7 @@ data_completersgraph = completers %>%
     left_join(enrollment, suffix = c(".completers", ".enrollment"), by = c("race", "year")) %>%
     select(year, race, ends_with("completers"), ends_with("enrollment"), -starts_with("X")) %>%
     rowwise() %>%
-    mutate(sig = prop.test(x = c(value.completers, value.enrollment), n = c(total.completers, total.enrollment), correct = FALSE)$p.value) %>%
+    mutate(sig = prop.test(x = c(value.completers, value.enrollment), n = c(total.completers, total.enrollment))$p.value) %>%
     ungroup() %>%
     pivot_longer(c(contains("value"), contains("total"), contains("percent")),
                  names_sep = "\\.", 
@@ -68,7 +68,7 @@ data_graduatesgraph = graduates %>%
     left_join(enrollment, suffix = c(".graduates", ".enrollment"), by = c("race", "year")) %>%
     select(year, race, ends_with("graduates"), ends_with("enrollment"), -starts_with("X")) %>%
     rowwise() %>%
-    mutate(sig = prop.test(x = c(value.graduates, value.enrollment), n = c(total.graduates, total.enrollment), correct = FALSE)$p.value) %>%
+    mutate(sig = prop.test(x = c(value.graduates, value.enrollment), n = c(total.graduates, total.enrollment))$p.value) %>%
     ungroup() %>%
     pivot_longer(c(contains("value"), contains("total"), contains("percent")),
                  names_sep = "\\.", 
@@ -79,7 +79,7 @@ data_facultygraph = faculty %>%
     select(year, race, rank, ends_with("faculty"), ends_with("demographics"), -starts_with("X")) %>%
     mutate(across(ends_with("faculty"), ~ifelse(is.na(.), 0, .))) %>%
     rowwise() %>%
-    mutate(sig = ifelse(total.faculty != 0, prop.test(x = c(value.faculty, value.demographics), n = c(total.faculty, total.demographics), correct = FALSE)$p.value, NA)) %>%
+    mutate(sig = ifelse(total.faculty != 0, prop.test(x = c(value.faculty, value.demographics), n = c(total.faculty, total.demographics))$p.value, NA)) %>%
     ungroup() %>%
     pivot_longer(c(contains("value"), contains("total"), contains("percent")),
                  names_sep = "\\.", 
