@@ -1,5 +1,9 @@
+#### Load in libraries #### 
+
 library(shiny)
 library(tidyverse)
+
+#### Define theme that will be used for graphs later #### 
 
 minimaltheme =  
     theme(axis.line.x = element_line(),
@@ -8,9 +12,9 @@ minimaltheme =
           panel.grid.minor = element_blank(),
           plot.title = element_text(hjust = 0.5))
 
-# Define UI for application that draws graphs
-
 # setwd("C:/Users/Colton/Desktop/WOUApp/WOUapp")
+
+#### Pull in cleaned up data files downloaded from IPEDS and ACS #### 
 
 enrollment = read.csv("2010-2019 Enrollment.csv") %>%
     filter(race != "Nonresident alien")
@@ -25,7 +29,7 @@ graduates = read.csv("2011-2019 Graduates.csv")
 
 faculty = read.csv("2012-2019 Faculty.csv")
 
-
+#### Match IPEDS and ACS data to the relevant target for the indicator #### 
 
 data_enrollmentgraph = enrollment %>%
     left_join(demographics, suffix = c(".enrollment", ".demographics"), by = c("race", "year")) %>%
@@ -62,14 +66,15 @@ data_facultygraph = faculty %>%
                  names_sep = "\\.", 
                  names_to = c("valuetype", "source"))
 
+#### Define the user interface portion of the application #### 
+
 ui <- fluidPage(
+
+titlePanel("WOU - Racial and Ethnic Diversity Across the Academic Pipeline"),
     
-    # Application title
-    titlePanel("WOU - Racial and Ethnic Diversity Across the Academic Pipeline"),
     
-    
-    mainPanel(
-        tabsetPanel(      tabPanel("Intro", 
+mainPanel(
+    tabsetPanel(      tabPanel("Intro", 
                                    "Data Dashboard:", tags$a(href="https://coltonchristian.shinyapps.io/wouapp/", "coltonchristian.shinyapps.io/wouapp"),
                                    br(), 
                                    "Code:", tags$a(href="https://github.com/coltonchristian/WOUapp", "github.com/coltonchristian/WOUapp"),
@@ -79,50 +84,56 @@ ui <- fluidPage(
                                    h2("Background"),
                                    
                                    
-                                   "For this project, I set out to analyze the racial and ethnic diversity at Western Oregon University. I used publicly available data from the American Community Survey (produced by the US
-Census Bureau) and from IPEDS. I created a data dashboard that plots and compares racial and ethnic diversity
-at various steps in the academic pipeline for each of the last 10 years (where available). These steps include Fall Enrollment,
-Majors, Completers, Graduates, and the diversity of faculty.",
+"For this project, I set out to analyze the racial and ethnic diversity at Western Oregon University. 
+I used publicly available data from the American Community Survey (produced by the US Census Bureau) and
+from IPEDS. I created a data dashboard that plots and compares racial and ethnic diversity
+at various steps in the academic pipeline for each of the last 10 years (where available). These steps 
+include Fall Enrollment, Majors, Completers, Graduates, and the diversity of faculty.",
                                    br(),
                                    br(),
-                                   "Depending on the step, a different comparison 
-target is used. For example, for Fall Enrollment, I compared the racial and ethnic diversity of the students 
-enrolled to the racial and ethnic diversity of the state of Oregon as a whole. For Majors, Completers, and Graduates, I compared the racial and ethnic diversity of each indicator to the racial and ethnic diversity of students enrolled. 
-Lastly, for faculty diversity, I compared the racial and ethnic diversity of faculty to the racial and ethnic diversity 
-of the state of Oregon as a whole."), 
+"Depending on the step, a different comparison target is used. For example, for Fall Enrollment, I compared
+the racial and ethnic diversity of the students enrolled to the racial and ethnic diversity of the state of 
+Oregon as a whole. For Majors, Completers, and Graduates, I compared the racial and ethnic diversity of each
+indicator to the racial and ethnic diversity of students enrolled. Lastly, for faculty diversity, I compared
+the racial and ethnic diversity of faculty to the racial and ethnic diversity of the state of Oregon as a 
+whole."), 
                           
                           tabPanel("Enrollment", 
                                    img(src='Enrollment.png', align = "center"),
                                    
                                    h2("Enrollment"),
-                                   "To examine racial and ethnic diversity in enrollment, I began by downloading Fall Enrollment data from IPEDS.
-Fall enrollment represents students enrolled for credit during the fall where credit means recognition of
-attendance or performance in an instructional activity (course or program) that can be applied by a recipient
-toward the requirements for a degree, diploma, certificate, or other formal award. Enrollment reported is of
-the institution's official fall reporting date or October 15.",
+                                   
+"To examine racial and ethnic diversity in enrollment, I began by downloading Fall Enrollment data from 
+IPEDS. Fall enrollment represents students enrolled for credit during the fall where credit means recognition
+of attendance or performance in an instructional activity (course or program) that can be applied by a 
+recipient toward the requirements for a degree, diploma, certificate, or other formal award. Enrollment 
+reported is of the institution's official fall reporting date or October 15.",
+
                                    br(),
                                    br(),
                                    
-                                   "Next, to provide for a benchmark comparison, I downloaded population data from the American Community Survey
+"Next, to provide for a comparison, I downloaded population data from the American Community Survey
 for the state of Oregon. Pairing these two datasets will allow me to determine whether the racial and ethnic
-diversity at Western Oregon University aligns with the racial and ethnic diversity of the state of Oregon or 
-if there are groups that are under- or over-represented as compared to the population of Oregon. ",
+diversity at Western Oregon University aligns with the racial and ethnic diversity of the state of Oregon or
+if there are groups that are under- or over-represented as compared to the population of Oregon.",
                                    
                                    br(),
                                    br(),
                                    
-                                   "Under-represented: When the population estimate is higher than the enrollment estimate, this suggests that
+"Under-represented: When the population estimate is higher than the enrollment estimate, this suggests that
 a racial or ethnic group may be under-represented at WOU.",
                                    
                                    br(),
                                    br(),
                                    
-                                   "Equally-represented: When the population estimate is equal (i.e. largely overlapping) to the enrollment
+"Equally-represented: When the population estimate is equal (i.e. largely overlapping) to the enrollment
 estimate, this suggests that a racial or ethnic group is fairly equally represented at WOU.",
                                    br(),
                                    br(),
-                                   "Over-represented: When the population estimate is lower than the enrollment estimate, this suggests that
+
+"Over-represented: When the population estimate is lower than the enrollment estimate, this suggests that
 a racial or ethnic group may be over-represented at WOU.",
+
                                    hr(),
                                    selectInput("Year",
                                                "Year:",
@@ -135,13 +146,15 @@ a racial or ethnic group may be over-represented at WOU.",
                           tabPanel("Majors", 
                                    img(src='Majors.png', align = "center"),
                                    h2("Majors"),
-                                   "To examine racial and ethnic diversity in major areas of study, I began by downloading data on major 
+                                   
+"To examine racial and ethnic diversity in major areas of study, I began by downloading data on major 
 programs of study from IPEDS. This data is broken out into five mean areas which include Education, 
 Biological Sciences Life Sciences, Mathematics, Physical Sciences, and Business Management and 
 Administrative Services.",
                                    br(),
                                    br(),
-                                   "Next, to provide for a benchmark comparison, I used the fall enrollment data that was described previously. 
+
+"Next, to provide for a comparison, I used the fall enrollment data that was described previously. 
 Pairing these two datasets will allow me to determine whether the racial and ethnic diversity in major 
 programs of study at Western Oregon University aligns with the racial and ethnic diversity of the students 
 enrolled at Western Oregon University or if there are groups that are under- or over-represented as compared 
@@ -150,19 +163,20 @@ to those students enrolled.",
                                    br(),
                                    br(),
                                    
-                                   "Under-represented: When the enrollment estimate is higher than the major estimate, this suggests that a
+"Under-represented: When the enrollment estimate is higher than the major estimate, this suggests that a
 racial or ethnic group may be under-represented in a major area of study at WOU.",
                                    
                                    br(),
                                    br(),
                                    
-                                   "Equally-represented: When the enrollment estimate is equal (i.e. largely overlapping) to the major 
+"Equally-represented: When the enrollment estimate is equal (i.e. largely overlapping) to the major 
 estimate, this suggests that a racial or ethnic group is fairly equally represented in a major area of 
 study at WOU.",
                                    br(),
                                    br(),
-                                   "Over-represented: When the enrollment estimate is lower than the major estimate, this suggests that a 
-racial or ethnic group may be over-represented at WOU.",
+
+"Over-represented: When the enrollment estimate is lower than the major estimate, this suggests that a 
+racial or ethnic group may be over-represented in a major area of study at WOU.",
                                    hr(),
                                    
                                    selectInput("Major",
@@ -182,7 +196,39 @@ racial or ethnic group may be over-represented at WOU.",
                           
                           tabPanel("Graduates",
                                    img(src='Graduates.png', align = "center"),
-                                   "This tab depicts...",  
+                                   h2("Graduates"),
+                                   
+"To examine racial and ethnic diversity in graduates, I began by downloading completers data from 
+IPEDS. The data that I downloaded was for completion within 150% of normal time. In other words, this data represents students that enrolled to obtain a 4-year degree and completed
+students that enrolled to obtain a 4-year degree and completed that degree within 6 years of beginning.",
+
+                                   br(),
+                                   br(),
+                                   
+"Next, to provide for a comparison, I used the fall enrollment data that was described previously. 
+Pairing these two datasets will allow me to determine whether the racial and ethnic diversity in graduates
+at Western Oregon University aligns with the racial and ethnic diversity of the students enrolled at Western 
+Oregon University or if there are groups that are under- or over-represented as compared 
+to those students enrolled.",
+                                   
+                                   br(),
+                                   br(),
+                                   
+"Under-represented: When the enrollment estimate is higher than the graduates estimate, this suggests that
+a racial or ethnic group may be under-represented for graduates of WOU.",
+                                   
+                                   br(),
+                                   br(),
+                                   
+"Equally-represented: When the enrollment estimate is equal (i.e. largely overlapping) to the graduates
+estimate, this suggests that a racial or ethnic group is fairly equally represented for graduates of WOU.",
+
+                                   br(),
+                                   br(),
+
+"Over-represented: When the enrollment estimate is lower than the graduates estimate, this suggests that
+a racial or ethnic group may be over-represented for graduates of WOU.",
+
                                    hr(),
                                    selectInput("Year3",
                                                "Year:",
@@ -195,23 +241,39 @@ racial or ethnic group may be over-represented at WOU.",
                           tabPanel("Completers", 
                                    img(src='Completers.png', align = "center"),
                                    h2("Completers"),
-                                   "To examine racial and ethnic diversity in completers, I began by downloading data on completers from IPEDS. This metric is defined as the number of students receiving awards/degrees. This metric tends to be lower than completions because completions include all awards/degrees conferred, whereas for completers, each student is only counted once.",
+                                   
+"To examine racial and ethnic diversity in completers, I began by downloading data on completers from IPEDS. 
+This metric is defined as the number of students receiving awards/degrees. This metric tends to be lower 
+than completions because completions include all awards/degrees conferred, whereas for completers, each 
+student is only counted once.",
+
                                    br(),
                                    br(),
-                                   "Again, to provide for a benchmark comparison, I used the fall enrollment data that was described previously. Pairing these two datasets will allow me to determine whether the racial and ethnic diversity for completers at Western Oregon University aligns with the racial and ethnic diversity of the students enrolled at Western Oregon University or if there are groups that are under- or over-represented as compared to those students enrolled.",
+
+"Again, to provide for a comparison, I used the fall enrollment data that was described previously.
+Pairing these two datasets will allow me to determine whether the racial and ethnic diversity for completers
+at Western Oregon University aligns with the racial and ethnic diversity of the students enrolled at Western
+Oregon University or if there are groups that are under- or over-represented as compared to those students 
+enrolled.",
                                    
                                    br(),
                                    br(),
                                    
-                                   "Under-represented: When the enrollment estimate is higher than the completers estimate, this suggests that a racial or ethnic group may be under-represented for completers at WOU.",
+"Under-represented: When the enrollment estimate is higher than the completers estimate, this suggests that
+a racial or ethnic group may be under-represented for completers at WOU.",
                                    
                                    br(),
                                    br(),
                                    
-                                   "Equally-represented: When the enrollment estimate is equal (i.e. largely overlapping) to the completers estimate, this suggests that a racial or ethnic group is fairly equally represented for completers at WOU.",
+"Equally-represented: When the enrollment estimate is equal (i.e. largely overlapping) to the completers 
+estimate, this suggests that a racial or ethnic group is fairly equally represented for completers at WOU.",
+
                                    br(),
                                    br(),
-                                   "Over-represented: When the enrollment estimate is lower than the completers estimate, this suggests that a racial or ethnic group may be over-represented for completers at WOU.",
+
+"Over-represented: When the enrollment estimate is lower than the completers estimate, this suggests that a
+racial or ethnic group may be over-represented for completers at WOU.",
+
                                    hr(),
                                    
                                    selectInput("Year4",
@@ -225,24 +287,34 @@ racial or ethnic group may be over-represented at WOU.",
                           tabPanel("Faculty",
                                    img(src='Faculty.png', align = "center"),
                                    h2("Faculty"),
-                                   "",
-                                   br(),
-                                   br(),
-                                   "",
+                                   
+"To examine racial and ethnic diversity in faculty, I began by downloading data on full-time instructional staff with faculty status from IPEDS. This data is broken out into six academic ranks which include full professors, associate professors, assistant professors, instructors, lecturers, and no academic rank.",
                                    
                                    br(),
                                    br(),
                                    
-                                   "",
+"Next, to provide for a comparison, I used the population data from the American Community Survey
+for the state of Oregon that was described previously. Pairing these two datasets will allow me to determine whether the racial and ethnic diversity at Western Oregon University aligns with the racial and ethnic diversity of the state of Oregon or if there are groups that are under- or over-represented as compared to the population of Oregon.",
                                    
                                    br(),
                                    br(),
                                    
-                                   "",
+"Under-represented: When the population estimate is higher than the faculty estimate, this suggests that
+a racial or ethnic group may be under-represented amongst faculty at WOU.",
+                                   
                                    br(),
                                    br(),
-                                   "",
+                                   
+"Equally-represented: When the population estimate is equal (i.e. largely overlapping) to the faculty
+estimate, this suggests that a racial or ethnic group is fairly equally represented amongst faculty at WOU.",
+                                   br(),
+                                   br(),
+
+"Over-represented: When the population estimate is lower than the faculty estimate, this suggests that
+a racial or ethnic group may be over-represented amongst faculty at WOU.",
+
                                    hr(),
+                                   
                                    selectInput("Rank",
                                                "Rank:",
                                                choices = c("Professor",
@@ -263,9 +335,6 @@ racial or ethnic group may be over-represented at WOU.",
 )
 
 
-
-
-# Define server logic required to draw a histogram
 server <- function(input, output) {
     
     #### Enrollment ####
