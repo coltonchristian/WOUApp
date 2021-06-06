@@ -2,6 +2,7 @@
 
 library(shiny)
 library(tidyverse)
+library(grid)
 
 #### Define theme that will be used for graphs later #### 
 
@@ -10,9 +11,10 @@ minimaltheme =
           axis.line.y = element_line(),
           panel.grid.major = element_blank(),
           panel.grid.minor = element_blank(),
-          plot.title = element_text(hjust = 0.5))
+          plot.title = element_text(hjust = 0.5),
+          plot.caption=element_text(hjust = 0))
 
- setwd("C:/Users/Colton/Desktop/WOUApp/WOUapp")
+ #setwd("C:/Users/Colton/Desktop/WOUApp/WOUapp")
 
 #### Pull in cleaned up data files downloaded from IPEDS and ACS #### 
 
@@ -372,6 +374,7 @@ server <- function(input, output) {
             scale_color_manual(values = c("blue", "black")) +
             scale_x_continuous(breaks = seq(0, 100, 10), limits = c(0,100)) +
             ggtitle("Enrollment") +
+            labs(caption = "Note: Asterisks correspond to significant (p < .05) two-proportion Z-tests.")+
             theme_minimal() + 
             minimaltheme})
     
@@ -413,6 +416,7 @@ server <- function(input, output) {
             scale_color_manual(values = c("blue", "black")) +
             scale_x_continuous(breaks = seq(0, 100, 10), limits = c(0,100)) +
             ggtitle("Majors") +
+            labs(caption = "Note: Asterisks correspond to significant (p < .05) two-proportion Z-tests.")+
             theme_minimal() + 
             minimaltheme})
     
@@ -453,6 +457,7 @@ server <- function(input, output) {
             scale_color_manual(values = c("blue", "black")) +
             scale_x_continuous(breaks = seq(0, 100, 10), limits = c(0,100)) +
             ggtitle("Completers") +
+            labs(caption = "Note: Asterisks correspond to significant (p < .05) two-proportion Z-tests.")+
             theme_minimal() + 
             minimaltheme})
     
@@ -492,6 +497,7 @@ server <- function(input, output) {
             scale_color_manual(values = c("blue", "black")) +
             scale_x_continuous(breaks = seq(0, 100, 10), limits = c(0,100)) +
             ggtitle("Graduates") +
+            labs(caption = "Note: Asterisks correspond to significant (p < .05) two-proportion Z-tests.")+
             theme_minimal() + 
             minimaltheme})
     
@@ -532,6 +538,7 @@ server <- function(input, output) {
             scale_color_manual(values = c("blue", "black")) +
             scale_x_continuous(breaks = seq(0, 100, 10), limits = c(0,100)) +
             ggtitle("Faculty") +
+            labs(caption = "Note: Asterisks correspond to significant (p < .05) two-proportion Z-tests.")+
             theme_minimal() + 
             minimaltheme})
     
