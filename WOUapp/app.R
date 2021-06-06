@@ -12,7 +12,7 @@ minimaltheme =
           panel.grid.minor = element_blank(),
           plot.title = element_text(hjust = 0.5))
 
-# setwd("C:/Users/Colton/Desktop/WOUApp/WOUapp")
+ setwd("C:/Users/Colton/Desktop/WOUApp/WOUapp")
 
 #### Pull in cleaned up data files downloaded from IPEDS and ACS #### 
 
@@ -34,13 +34,20 @@ faculty = read.csv("2012-2019 Faculty.csv")
 data_enrollmentgraph = enrollment %>%
     left_join(demographics, suffix = c(".enrollment", ".demographics"), by = c("race", "year")) %>%
     select(year, race, ends_with("enrollment"), ends_with("demographics"), -starts_with("X")) %>%
+    rowwise() %>%
+    mutate(sig = prop.test(x = c(value.enrollment, value.demographics), n = c(total.enrollment, total.demographics), correct = FALSE)$p.value) %>%
+    ungroup() %>%
     pivot_longer(c(contains("value"), contains("total"), contains("percent")),
                  names_sep = "\\.", 
-                 names_to = c("valuetype", "source"))
+                 names_to = c("valuetype", "source")) 
+    
 
 data_majorsgraph = majors %>%
     left_join(enrollment, suffix = c(".major", ".enrollment"), by = c("race", "year")) %>%
     select(year, race, ends_with("major"), ends_with("enrollment"), -starts_with("X")) %>%
+    rowwise() %>%
+    mutate(sig = prop.test(x = c(value.major, value.enrollment), n = c(total.major, total.enrollment), correct = FALSE)$p.value) %>%
+    ungroup() %>%
     pivot_longer(c(contains("value"), contains("total"), contains("percent")),
                  names_sep = "\\.", 
                  names_to = c("valuetype", "source"))
@@ -48,6 +55,9 @@ data_majorsgraph = majors %>%
 data_completersgraph = completers %>%
     left_join(enrollment, suffix = c(".completers", ".enrollment"), by = c("race", "year")) %>%
     select(year, race, ends_with("completers"), ends_with("enrollment"), -starts_with("X")) %>%
+    rowwise() %>%
+    mutate(sig = prop.test(x = c(value.completers, value.enrollment), n = c(total.completers, total.enrollment), correct = FALSE)$p.value) %>%
+    ungroup() %>%
     pivot_longer(c(contains("value"), contains("total"), contains("percent")),
                  names_sep = "\\.", 
                  names_to = c("valuetype", "source"))
@@ -55,6 +65,9 @@ data_completersgraph = completers %>%
 data_graduatesgraph = graduates %>%
     left_join(enrollment, suffix = c(".graduates", ".enrollment"), by = c("race", "year")) %>%
     select(year, race, ends_with("graduates"), ends_with("enrollment"), -starts_with("X")) %>%
+    rowwise() %>%
+    mutate(sig = prop.test(x = c(value.graduates, value.enrollment), n = c(total.graduates, total.enrollment), correct = FALSE)$p.value) %>%
+    ungroup() %>%
     pivot_longer(c(contains("value"), contains("total"), contains("percent")),
                  names_sep = "\\.", 
                  names_to = c("valuetype", "source"))
@@ -62,11 +75,15 @@ data_graduatesgraph = graduates %>%
 data_facultygraph = faculty %>%
     left_join(demographics, suffix = c(".faculty", ".demographics"), by = c("race", "year")) %>%
     select(year, race, rank, ends_with("faculty"), ends_with("demographics"), -starts_with("X")) %>%
+    mutate(across(ends_with("faculty"), ~ifelse(is.na(.), 0, .))) %>%
+    rowwise() %>%
+    mutate(sig = ifelse(total.faculty != 0, prop.test(x = c(value.faculty, value.demographics), n = c(total.faculty, total.demographics), correct = FALSE)$p.value, NA)) %>%
+    ungroup() %>%
     pivot_longer(c(contains("value"), contains("total"), contains("percent")),
                  names_sep = "\\.", 
                  names_to = c("valuetype", "source"))
 
-#### Define the user interface portion of the application #### 
+ #### Define the user interface portion of the application #### 
 
 ui <- fluidPage(
 
@@ -343,11 +360,15 @@ server <- function(input, output) {
         data_enrollmentgraph %>%
             filter(year == input$Year) %>%
             filter(valuetype == "percent") %>%
-            mutate(percent = as.numeric(value)*100) %T>%
-            assign("enrollmentdatadl", ., .GlobalEnv) %>%            
+            mutate(percent = as.numeric(value)*100) %>%
+            group_by(year, race) %>%
+            mutate(sig = ifelse(percent != max(percent), NA, sig)) %>%
+            ungroup() %T>%
+            assign("enrollmentdatadl", ., .GlobalEnv) %>% 
             ggplot(., aes(x=percent, y= race, group = source)) + 
             geom_line(aes(group = race)) +
             geom_point(aes(color = source)) +
+            geom_text(aes(x = percent + 3, y = race, label = ifelse(sig < .05, "*", ""))) +
             scale_color_manual(values = c("blue", "black")) +
             scale_x_continuous(breaks = seq(0, 100, 10), limits = c(0,100)) +
             ggtitle("Enrollment") +
@@ -380,11 +401,15 @@ server <- function(input, output) {
             filter(year == input$Year2) %>%
             filter(major == input$Major) %>%
             filter(valuetype == "percent") %>%
-            mutate(percent = as.numeric(value)*100) %T>%
+            mutate(percent = as.numeric(value)*100) %>%
+            group_by(year, major, race) %>%
+            mutate(sig = ifelse(percent != max(percent), NA, sig)) %>%
+            ungroup() %T>%
             assign("majorsdatadl", ., .GlobalEnv) %>%
             ggplot(., aes(x=percent, y= race, group = source)) + 
             geom_line(aes(group = race)) +
             geom_point(aes(color = source)) +
+            geom_text(aes(x = percent + 3, y = race, label = ifelse(sig < .05, "*", ""))) +
             scale_color_manual(values = c("blue", "black")) +
             scale_x_continuous(breaks = seq(0, 100, 10), limits = c(0,100)) +
             ggtitle("Majors") +
@@ -416,11 +441,15 @@ server <- function(input, output) {
         data_completersgraph %>%
             filter(year == input$Year4) %>%
             filter(valuetype == "percent") %>%
-            mutate(percent = as.numeric(value)*100) %T>%
+            mutate(percent = as.numeric(value)*100) %>%
+            group_by(year, race) %>%
+            mutate(sig = ifelse(percent != max(percent), NA, sig)) %>%
+            ungroup() %T>%
             assign("completersdatadl", ., .GlobalEnv) %>%
             ggplot(., aes(x=percent, y= race, group = source)) + 
             geom_line(aes(group = race)) +
             geom_point(aes(color = source)) +
+            geom_text(aes(x = percent + 3, y = race, label = ifelse(sig < .05, "*", ""))) +
             scale_color_manual(values = c("blue", "black")) +
             scale_x_continuous(breaks = seq(0, 100, 10), limits = c(0,100)) +
             ggtitle("Completers") +
@@ -451,11 +480,15 @@ server <- function(input, output) {
         data_graduatesgraph %>%
             filter(year == input$Year3) %>%
             filter(valuetype == "percent") %>%
-            mutate(percent = as.numeric(value)*100) %T>%
+            mutate(percent = as.numeric(value)*100) %>%
+            group_by(year, race) %>%
+            mutate(sig = ifelse(percent != max(percent), NA, sig)) %>%
+            ungroup() %T>%
             assign("graduatesdatadl", ., .GlobalEnv) %>%
             ggplot(., aes(x=percent, y= race, group = source)) + 
             geom_line(aes(group = race)) +
             geom_point(aes(color = source)) +
+            geom_text(aes(x = percent + 3, y = race, label = ifelse(sig < .05, "*", ""))) +
             scale_color_manual(values = c("blue", "black")) +
             scale_x_continuous(breaks = seq(0, 100, 10), limits = c(0,100)) +
             ggtitle("Graduates") +
@@ -487,11 +520,15 @@ server <- function(input, output) {
             filter(year == input$Year5) %>%
             filter(rank == input$Rank) %>%
             filter(valuetype == "percent") %>%
-            mutate(percent = as.numeric(value)*100) %T>%
+            mutate(percent = as.numeric(value)*100) %>%
+            group_by(year, rank, race) %>%
+            mutate(sig = ifelse(percent != max(percent), NA, sig)) %>%
+            ungroup() %T>%
             assign("facultydatadl", ., .GlobalEnv) %>%
             ggplot(., aes(x=percent, y= race, group = source)) + 
             geom_line(aes(group = race)) +
             geom_point(aes(color = source)) +
+            geom_text(aes(x = percent + 3, y = race, label = ifelse(sig < .05, "*", ""))) +
             scale_color_manual(values = c("blue", "black")) +
             scale_x_continuous(breaks = seq(0, 100, 10), limits = c(0,100)) +
             ggtitle("Faculty") +

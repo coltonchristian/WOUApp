@@ -17,11 +17,12 @@ faculty_clean = faculty %>%
   mutate(rank = str_extract(name, "(?<=staff..).*")) %>%
   mutate(across(c(race, rank), ~gsub("\\.", " ", .))) %>%
   mutate(across(c(race, rank), ~gsub("s $", "", .))) %>%
-  mutate(across(c(race, rank), ~toTitleCase(.))) %>%
+  mutate(across(c(rank), ~toTitleCase(.))) %>%
   group_by(year, rank) %>%
   mutate(total = value[race == "Grand"]) %>%
   filter(!race %in% c("Grand")) %>%
-  mutate(percent = value/total) 
+  mutate(percent = value/total) %>%
+  mutate(race = ifelse(race == "Hispanic or Latino", "Hispanic", race))
 
 write.csv(faculty_clean, "C:/Users/Colton/Desktop/WOUApp/WOUapp/2012-2019 Faculty.csv")
 
