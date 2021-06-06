@@ -119,6 +119,7 @@ a racial or ethnic group may be over-represented at WOU.",
                                                choices = seq(2010, 2019)),
                                    hr(),
                                    downloadButton('downloadenrollmentData', 'Download Enrollment Data'),
+                                   downloadButton('downloadenrollmentPlot', 'Download Enrollment Plot'),
                                    plotOutput("plot_enrollment")),
                           
                           tabPanel("Majors", 
@@ -166,6 +167,7 @@ racial or ethnic group may be over-represented at WOU.",
                                                choices = seq(2010, 2018, 2)),
                                    hr(),
                                    downloadButton('downloadmajorsData', 'Download Majors Data'),
+                                   downloadButton('downloadmajorsPlot', 'Download Majors Plot'),
                                    plotOutput("plot_majors")),
                           
                           tabPanel("Graduates",
@@ -177,6 +179,7 @@ racial or ethnic group may be over-represented at WOU.",
                                                choices = seq(2011,2019,1)),
                                    hr(),
                                    downloadButton('downloadgraduatesData', 'Download Graduates Data'),
+                                   downloadButton('downloadgraduatesPlot', 'Download Graduates Plot'),
                                    plotOutput("plot_graduates")),
                           
                           tabPanel("Completers", 
@@ -206,6 +209,7 @@ racial or ethnic group may be over-represented at WOU.",
                                                choices = seq(2012, 2019, 1)),
                                    hr(),
                                    downloadButton('downloadcompletersData', 'Download Completers Data'),
+                                   downloadButton('downloadcompletersPlot', 'Download Completers Plot'),
                                    plotOutput("plot_completers")),
                           
                           tabPanel("Faculty")) 
@@ -239,12 +243,20 @@ server <- function(input, output) {
     
     output$downloadenrollmentData <- downloadHandler(
         filename = function() {
-            paste('data-enrollment-', Sys.Date(), '.csv', sep='')
+            paste('data-enrollment-', input$Year, "_", Sys.Date(), '.csv', sep='')
         },
         content = function(con) {
             write.csv(enrollmentdatadl, con)
         }
     )
+    
+    output$downloadenrollmentPlot <- downloadHandler(
+        filename = function() { paste('plot-enrollment-',  input$Year, "_", Sys.Date(), '.png', sep='') },
+        content = function(file) {
+            ggsave(plot = plot_reactive_enrollment(), file,  device = "png")
+        }
+    )
+    
     
     #### Majors ####
     
@@ -268,12 +280,20 @@ server <- function(input, output) {
     
     output$downloadmajorsData <- downloadHandler(
         filename = function() {
-            paste('data-majors-', Sys.Date(), '.csv', sep='')
+            paste('data-majors-', input$Year2, "-", input$Major, "_", Sys.Date(), '.csv', sep='')
         },
         content = function(con) {
             write.csv(majorsdatadl, con)
         }
     )
+        
+    output$downloadmajorsPlot <- downloadHandler(
+        filename = function() { paste('plot-majors-', input$Year2, "-", input$Major, "_", Sys.Date(), '.png', sep='') },
+        content = function(file) {
+            ggsave(plot = plot_reactive_majors(), file,  device = "png")
+        }
+    )
+
     
     #### Completers ####
     
@@ -296,10 +316,17 @@ server <- function(input, output) {
     
     output$downloadcompletersData <- downloadHandler(
         filename = function() {
-            paste('data-completers-', Sys.Date(), '.csv', sep='')
+            paste('data-completers-', input$Year4, "_",  Sys.Date(), '.csv', sep='')
         },
         content = function(con) {
             write.csv(completersdatadl, con)
+        }
+    )
+    
+    output$downloadcompletersPlot <- downloadHandler(
+        filename = function() { paste('plot-completers-', input$Year4, "_",  Sys.Date(), '.png', sep='') },
+        content = function(file) {
+            ggsave(plot = plot_reactive_completers(), file,  device = "png")
         }
     )
     
@@ -324,10 +351,17 @@ server <- function(input, output) {
     
     output$downloadgraduatesData <- downloadHandler(
         filename = function() {
-            paste('data-graduates-', Sys.Date(), '.csv', sep='')
+            paste('data-graduates-', input$Year3, "_", Sys.Date(), '.csv', sep='')
         },
         content = function(con) {
             write.csv(graduatesdatadl, con)
+        }
+    )
+    
+    output$downloadgraduatesPlot <- downloadHandler(
+        filename = function() { paste('plot-graduates-', input$Year3, "_", Sys.Date(), '.png', sep='') },
+        content = function(file) {
+            ggsave(plot = plot_reactive_graduates(), file,  device = "png")
         }
     )
 }
