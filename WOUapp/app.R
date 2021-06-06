@@ -23,6 +23,10 @@ completers = read.csv("2012-2019 Completers.csv")
 
 graduates = read.csv("2011-2019 Graduates.csv")
 
+faculty = read.csv("2012-2019 Faculty.csv")
+
+
+
 data_enrollmentgraph = enrollment %>%
     left_join(demographics, suffix = c(".enrollment", ".demographics"), by = c("race", "year")) %>%
     select(year, race, ends_with("enrollment"), ends_with("demographics"), -starts_with("X")) %>%
@@ -51,13 +55,19 @@ data_graduatesgraph = graduates %>%
                  names_sep = "\\.", 
                  names_to = c("valuetype", "source"))
 
+data_facultygraph = faculty %>%
+    left_join(demographics, suffix = c(".faculty", ".demographics"), by = c("race", "year")) %>%
+    select(year, race, rank, ends_with("faculty"), ends_with("demographics"), -starts_with("X")) %>%
+    pivot_longer(c(contains("value"), contains("total"), contains("percent")),
+                 names_sep = "\\.", 
+                 names_to = c("valuetype", "source"))
+
 ui <- fluidPage(
     
     # Application title
     titlePanel("WOU - Racial and Ethnic Diversity Across the Academic Pipeline"),
     
-    # Sidebar with a slider input for number of bins 
-    # Show a plot of the generated distribution
+    
     mainPanel(
         tabsetPanel(      tabPanel("Intro", 
                                    "Data Dashboard:", tags$a(href="https://coltonchristian.shinyapps.io/wouapp/", "coltonchristian.shinyapps.io/wouapp"),
@@ -212,7 +222,43 @@ racial or ethnic group may be over-represented at WOU.",
                                    downloadButton('downloadcompletersPlot', 'Download Completers Plot'),
                                    plotOutput("plot_completers")),
                           
-                          tabPanel("Faculty")) 
+                          tabPanel("Faculty",
+                                   img(src='Faculty.png', align = "center"),
+                                   h2("Faculty"),
+                                   "",
+                                   br(),
+                                   br(),
+                                   "",
+                                   
+                                   br(),
+                                   br(),
+                                   
+                                   "",
+                                   
+                                   br(),
+                                   br(),
+                                   
+                                   "",
+                                   br(),
+                                   br(),
+                                   "",
+                                   hr(),
+                                   selectInput("Rank",
+                                               "Rank:",
+                                               choices = c("Professor",
+                                                           "Associate Professor",
+                                                           "Assistant Professor",
+                                                           "Instructor",
+                                                           "Lecturer",
+                                                           "No Academic Rank")),
+                                   selectInput("Year5",
+                                               "Year:",
+                                               choices = seq(2012, 2019, 1)),
+                                   hr(),
+                                   downloadButton('downloadfacultyData', 'Download Faculty Data'),
+                                   downloadButton('downloadfacultyPlot', 'Download Faculty Plot'),
+                                   plotOutput("plot_faculty")) 
+        )
     )
 )
 
@@ -286,14 +332,14 @@ server <- function(input, output) {
             write.csv(majorsdatadl, con)
         }
     )
-        
+    
     output$downloadmajorsPlot <- downloadHandler(
         filename = function() { paste('plot-majors-', input$Year2, "-", input$Major, "_", Sys.Date(), '.png', sep='') },
         content = function(file) {
             ggsave(plot = plot_reactive_majors(), file,  device = "png")
         }
     )
-
+    
     
     #### Completers ####
     
@@ -362,6 +408,42 @@ server <- function(input, output) {
         filename = function() { paste('plot-graduates-', input$Year3, "_", Sys.Date(), '.png', sep='') },
         content = function(file) {
             ggsave(plot = plot_reactive_graduates(), file,  device = "png")
+        }
+    )
+    
+    #### Faculty ####
+    
+    plot_reactive_faculty = reactive({
+        data_facultygraph %>%
+            filter(year == input$Year5) %>%
+            filter(rank == input$Rank) %>%
+            filter(valuetype == "percent") %>%
+            mutate(percent = as.numeric(value)*100) %T>%
+            assign("facultydatadl", ., .GlobalEnv) %>%
+            ggplot(., aes(x=percent, y= race, group = source)) + 
+            geom_line(aes(group = race)) +
+            geom_point(aes(color = source)) +
+            scale_color_manual(values = c("blue", "black")) +
+            scale_x_continuous(breaks = seq(0, 100, 10), limits = c(0,100)) +
+            ggtitle("Faculty") +
+            theme_minimal() + 
+            minimaltheme})
+    
+    output$plot_faculty = renderPlot(plot_reactive_faculty())
+    
+    output$downloadfacultyData <- downloadHandler(
+        filename = function() {
+            paste('data-faculty-', input$Year5, "-", input$Rank, "_", Sys.Date(), '.csv', sep='')
+        },
+        content = function(con) {
+            write.csv(facultydatadl, con)
+        }
+    )
+    
+    output$downloadfacultyPlot <- downloadHandler(
+        filename = function() { paste('plot-faculty-', input$Year5, "-", input$Rank, "_", Sys.Date(), '.png', sep='') },
+        content = function(file) {
+            ggsave(plot = plot_reactive_faculty(), file,  device = "png")
         }
     )
 }

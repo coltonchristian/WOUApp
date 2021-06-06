@@ -1,0 +1,385 @@
+"","UnitID","Institution.Name","name","value","year","race","rank","total","percent"
+"1",210429,"Western Oregon University","American.Indian.or.Alaska.Native.total..S2019_IS..Instructional.staff..professors.",0,"2019","American Indian or Alaska Native","Professor",78,0
+"2",210429,"Western Oregon University","Asian.total..S2019_IS..Instructional.staff..professors.",3,"2019","Asian","Professor",78,0.0384615384615385
+"3",210429,"Western Oregon University","Black.or.African.American.total..S2019_IS..Instructional.staff..professors.",2,"2019","Black or African American","Professor",78,0.0256410256410256
+"4",210429,"Western Oregon University","Hispanic.or.Latino.total..S2019_IS..Instructional.staff..professors.",1,"2019","Hispanic or Latino","Professor",78,0.0128205128205128
+"5",210429,"Western Oregon University","Native.Hawaiian.or.Other.Pacific.Islander.total..S2019_IS..Instructional.staff..professors.",0,"2019","Native Hawaiian or Other Pacific Islander","Professor",78,0
+"6",210429,"Western Oregon University","White.total..S2019_IS..Instructional.staff..professors.",71,"2019","White","Professor",78,0.91025641025641
+"7",210429,"Western Oregon University","Two.or.more.races.total..S2019_IS..Instructional.staff..professors.",0,"2019","Two or more Races","Professor",78,0
+"8",210429,"Western Oregon University","Race.ethnicity.unknown.total..S2019_IS..Instructional.staff..professors.",1,"2019","Race Ethnicity Unknown","Professor",78,0.0128205128205128
+"9",210429,"Western Oregon University","American.Indian.or.Alaska.Native.total..S2019_IS..Instructional.staff..associate.professors.",0,"2019","American Indian or Alaska Native","Associate Professor",55,0
+"10",210429,"Western Oregon University","Asian.total..S2019_IS..Instructional.staff..associate.professors.",2,"2019","Asian","Associate Professor",55,0.0363636363636364
+"11",210429,"Western Oregon University","Black.or.African.American.total..S2019_IS..Instructional.staff..associate.professors.",1,"2019","Black or African American","Associate Professor",55,0.0181818181818182
+"12",210429,"Western Oregon University","Hispanic.or.Latino.total..S2019_IS..Instructional.staff..associate.professors.",6,"2019","Hispanic or Latino","Associate Professor",55,0.109090909090909
+"13",210429,"Western Oregon University","Native.Hawaiian.or.Other.Pacific.Islander.total..S2019_IS..Instructional.staff..associate.professors.",0,"2019","Native Hawaiian or Other Pacific Islander","Associate Professor",55,0
+"14",210429,"Western Oregon University","White.total..S2019_IS..Instructional.staff..associate.professors.",42,"2019","White","Associate Professor",55,0.763636363636364
+"15",210429,"Western Oregon University","Two.or.more.races.total..S2019_IS..Instructional.staff..associate.professors.",0,"2019","Two or more Races","Associate Professor",55,0
+"16",210429,"Western Oregon University","Race.ethnicity.unknown.total..S2019_IS..Instructional.staff..associate.professors.",3,"2019","Race Ethnicity Unknown","Associate Professor",55,0.0545454545454545
+"17",210429,"Western Oregon University","American.Indian.or.Alaska.Native.total..S2019_IS..Instructional.staff..assistant.professors.",1,"2019","American Indian or Alaska Native","Assistant Professor",87,0.0114942528735632
+"18",210429,"Western Oregon University","Asian.total..S2019_IS..Instructional.staff..assistant.professors.",3,"2019","Asian","Assistant Professor",87,0.0344827586206897
+"19",210429,"Western Oregon University","Black.or.African.American.total..S2019_IS..Instructional.staff..assistant.professors.",0,"2019","Black or African American","Assistant Professor",87,0
+"20",210429,"Western Oregon University","Hispanic.or.Latino.total..S2019_IS..Instructional.staff..assistant.professors.",2,"2019","Hispanic or Latino","Assistant Professor",87,0.0229885057471264
+"21",210429,"Western Oregon University","Native.Hawaiian.or.Other.Pacific.Islander.total..S2019_IS..Instructional.staff..assistant.professors.",0,"2019","Native Hawaiian or Other Pacific Islander","Assistant Professor",87,0
+"22",210429,"Western Oregon University","White.total..S2019_IS..Instructional.staff..assistant.professors.",51,"2019","White","Assistant Professor",87,0.586206896551724
+"23",210429,"Western Oregon University","Two.or.more.races.total..S2019_IS..Instructional.staff..assistant.professors.",0,"2019","Two or more Races","Assistant Professor",87,0
+"24",210429,"Western Oregon University","Race.ethnicity.unknown.total..S2019_IS..Instructional.staff..assistant.professors.",24,"2019","Race Ethnicity Unknown","Assistant Professor",87,0.275862068965517
+"25",210429,"Western Oregon University","American.Indian.or.Alaska.Native.total..S2019_IS..Instructional.staff..instructors.",0,"2019","American Indian or Alaska Native","Instructor",71,0
+"26",210429,"Western Oregon University","Asian.total..S2019_IS..Instructional.staff..instructors.",2,"2019","Asian","Instructor",71,0.028169014084507
+"27",210429,"Western Oregon University","Black.or.African.American.total..S2019_IS..Instructional.staff..instructors.",1,"2019","Black or African American","Instructor",71,0.0140845070422535
+"28",210429,"Western Oregon University","Hispanic.or.Latino.total..S2019_IS..Instructional.staff..instructors.",5,"2019","Hispanic or Latino","Instructor",71,0.0704225352112676
+"29",210429,"Western Oregon University","Native.Hawaiian.or.Other.Pacific.Islander.total..S2019_IS..Instructional.staff..instructors.",0,"2019","Native Hawaiian or Other Pacific Islander","Instructor",71,0
+"30",210429,"Western Oregon University","White.total..S2019_IS..Instructional.staff..instructors.",53,"2019","White","Instructor",71,0.746478873239437
+"31",210429,"Western Oregon University","Two.or.more.races.total..S2019_IS..Instructional.staff..instructors.",1,"2019","Two or more Races","Instructor",71,0.0140845070422535
+"32",210429,"Western Oregon University","Race.ethnicity.unknown.total..S2019_IS..Instructional.staff..instructors.",8,"2019","Race Ethnicity Unknown","Instructor",71,0.112676056338028
+"33",210429,"Western Oregon University","American.Indian.or.Alaska.Native.total..S2019_IS..Instructional.staff..lecturers.",0,"2019","American Indian or Alaska Native","Lecturer",5,0
+"34",210429,"Western Oregon University","Asian.total..S2019_IS..Instructional.staff..lecturers.",0,"2019","Asian","Lecturer",5,0
+"35",210429,"Western Oregon University","Black.or.African.American.total..S2019_IS..Instructional.staff..lecturers.",0,"2019","Black or African American","Lecturer",5,0
+"36",210429,"Western Oregon University","Hispanic.or.Latino.total..S2019_IS..Instructional.staff..lecturers.",0,"2019","Hispanic or Latino","Lecturer",5,0
+"37",210429,"Western Oregon University","Native.Hawaiian.or.Other.Pacific.Islander.total..S2019_IS..Instructional.staff..lecturers.",0,"2019","Native Hawaiian or Other Pacific Islander","Lecturer",5,0
+"38",210429,"Western Oregon University","White.total..S2019_IS..Instructional.staff..lecturers.",4,"2019","White","Lecturer",5,0.8
+"39",210429,"Western Oregon University","Two.or.more.races.total..S2019_IS..Instructional.staff..lecturers.",0,"2019","Two or more Races","Lecturer",5,0
+"40",210429,"Western Oregon University","Race.ethnicity.unknown.total..S2019_IS..Instructional.staff..lecturers.",1,"2019","Race Ethnicity Unknown","Lecturer",5,0.2
+"41",210429,"Western Oregon University","American.Indian.or.Alaska.Native.total..S2019_IS..Instructional.staff..no.academic.rank.",NA,"2019","American Indian or Alaska Native","No Academic Rank ",NA,NA
+"42",210429,"Western Oregon University","Asian.total..S2019_IS..Instructional.staff..no.academic.rank.",NA,"2019","Asian","No Academic Rank ",NA,NA
+"43",210429,"Western Oregon University","Black.or.African.American.total..S2019_IS..Instructional.staff..no.academic.rank.",NA,"2019","Black or African American","No Academic Rank ",NA,NA
+"44",210429,"Western Oregon University","Hispanic.or.Latino.total..S2019_IS..Instructional.staff..no.academic.rank.",NA,"2019","Hispanic or Latino","No Academic Rank ",NA,NA
+"45",210429,"Western Oregon University","Native.Hawaiian.or.Other.Pacific.Islander.total..S2019_IS..Instructional.staff..no.academic.rank.",NA,"2019","Native Hawaiian or Other Pacific Islander","No Academic Rank ",NA,NA
+"46",210429,"Western Oregon University","White.total..S2019_IS..Instructional.staff..no.academic.rank.",NA,"2019","White","No Academic Rank ",NA,NA
+"47",210429,"Western Oregon University","Two.or.more.races.total..S2019_IS..Instructional.staff..no.academic.rank.",NA,"2019","Two or more Races","No Academic Rank ",NA,NA
+"48",210429,"Western Oregon University","Race.ethnicity.unknown.total..S2019_IS..Instructional.staff..no.academic.rank.",NA,"2019","Race Ethnicity Unknown","No Academic Rank ",NA,NA
+"49",210429,"Western Oregon University","American.Indian.or.Alaska.Native.total..S2018_IS_RV..Instructional.staff..professors.",0,"2018","American Indian or Alaska Native","Professor",85,0
+"50",210429,"Western Oregon University","Asian.total..S2018_IS_RV..Instructional.staff..professors.",3,"2018","Asian","Professor",85,0.0352941176470588
+"51",210429,"Western Oregon University","Black.or.African.American.total..S2018_IS_RV..Instructional.staff..professors.",2,"2018","Black or African American","Professor",85,0.0235294117647059
+"52",210429,"Western Oregon University","Hispanic.or.Latino.total..S2018_IS_RV..Instructional.staff..professors.",2,"2018","Hispanic or Latino","Professor",85,0.0235294117647059
+"53",210429,"Western Oregon University","Native.Hawaiian.or.Other.Pacific.Islander.total..S2018_IS_RV..Instructional.staff..professors.",0,"2018","Native Hawaiian or Other Pacific Islander","Professor",85,0
+"54",210429,"Western Oregon University","White.total..S2018_IS_RV..Instructional.staff..professors.",77,"2018","White","Professor",85,0.905882352941176
+"55",210429,"Western Oregon University","Two.or.more.races.total..S2018_IS_RV..Instructional.staff..professors.",0,"2018","Two or more Races","Professor",85,0
+"56",210429,"Western Oregon University","Race.ethnicity.unknown.total..S2018_IS_RV..Instructional.staff..professors.",1,"2018","Race Ethnicity Unknown","Professor",85,0.0117647058823529
+"57",210429,"Western Oregon University","American.Indian.or.Alaska.Native.total..S2018_IS_RV..Instructional.staff..associate.professors.",0,"2018","American Indian or Alaska Native","Associate Professor",54,0
+"58",210429,"Western Oregon University","Asian.total..S2018_IS_RV..Instructional.staff..associate.professors.",2,"2018","Asian","Associate Professor",54,0.037037037037037
+"59",210429,"Western Oregon University","Black.or.African.American.total..S2018_IS_RV..Instructional.staff..associate.professors.",1,"2018","Black or African American","Associate Professor",54,0.0185185185185185
+"60",210429,"Western Oregon University","Hispanic.or.Latino.total..S2018_IS_RV..Instructional.staff..associate.professors.",6,"2018","Hispanic or Latino","Associate Professor",54,0.111111111111111
+"61",210429,"Western Oregon University","Native.Hawaiian.or.Other.Pacific.Islander.total..S2018_IS_RV..Instructional.staff..associate.professors.",0,"2018","Native Hawaiian or Other Pacific Islander","Associate Professor",54,0
+"62",210429,"Western Oregon University","White.total..S2018_IS_RV..Instructional.staff..associate.professors.",41,"2018","White","Associate Professor",54,0.759259259259259
+"63",210429,"Western Oregon University","Two.or.more.races.total..S2018_IS_RV..Instructional.staff..associate.professors.",0,"2018","Two or more Races","Associate Professor",54,0
+"64",210429,"Western Oregon University","Race.ethnicity.unknown.total..S2018_IS_RV..Instructional.staff..associate.professors.",3,"2018","Race Ethnicity Unknown","Associate Professor",54,0.0555555555555556
+"65",210429,"Western Oregon University","American.Indian.or.Alaska.Native.total..S2018_IS_RV..Instructional.staff..assistant.professors.",0,"2018","American Indian or Alaska Native","Assistant Professor",69,0
+"66",210429,"Western Oregon University","Asian.total..S2018_IS_RV..Instructional.staff..assistant.professors.",4,"2018","Asian","Assistant Professor",69,0.0579710144927536
+"67",210429,"Western Oregon University","Black.or.African.American.total..S2018_IS_RV..Instructional.staff..assistant.professors.",0,"2018","Black or African American","Assistant Professor",69,0
+"68",210429,"Western Oregon University","Hispanic.or.Latino.total..S2018_IS_RV..Instructional.staff..assistant.professors.",2,"2018","Hispanic or Latino","Assistant Professor",69,0.0289855072463768
+"69",210429,"Western Oregon University","Native.Hawaiian.or.Other.Pacific.Islander.total..S2018_IS_RV..Instructional.staff..assistant.professors.",0,"2018","Native Hawaiian or Other Pacific Islander","Assistant Professor",69,0
+"70",210429,"Western Oregon University","White.total..S2018_IS_RV..Instructional.staff..assistant.professors.",45,"2018","White","Assistant Professor",69,0.652173913043478
+"71",210429,"Western Oregon University","Two.or.more.races.total..S2018_IS_RV..Instructional.staff..assistant.professors.",0,"2018","Two or more Races","Assistant Professor",69,0
+"72",210429,"Western Oregon University","Race.ethnicity.unknown.total..S2018_IS_RV..Instructional.staff..assistant.professors.",12,"2018","Race Ethnicity Unknown","Assistant Professor",69,0.173913043478261
+"73",210429,"Western Oregon University","American.Indian.or.Alaska.Native.total..S2018_IS_RV..Instructional.staff..instructors.",0,"2018","American Indian or Alaska Native","Instructor",72,0
+"74",210429,"Western Oregon University","Asian.total..S2018_IS_RV..Instructional.staff..instructors.",2,"2018","Asian","Instructor",72,0.0277777777777778
+"75",210429,"Western Oregon University","Black.or.African.American.total..S2018_IS_RV..Instructional.staff..instructors.",1,"2018","Black or African American","Instructor",72,0.0138888888888889
+"76",210429,"Western Oregon University","Hispanic.or.Latino.total..S2018_IS_RV..Instructional.staff..instructors.",6,"2018","Hispanic or Latino","Instructor",72,0.0833333333333333
+"77",210429,"Western Oregon University","Native.Hawaiian.or.Other.Pacific.Islander.total..S2018_IS_RV..Instructional.staff..instructors.",0,"2018","Native Hawaiian or Other Pacific Islander","Instructor",72,0
+"78",210429,"Western Oregon University","White.total..S2018_IS_RV..Instructional.staff..instructors.",56,"2018","White","Instructor",72,0.777777777777778
+"79",210429,"Western Oregon University","Two.or.more.races.total..S2018_IS_RV..Instructional.staff..instructors.",3,"2018","Two or more Races","Instructor",72,0.0416666666666667
+"80",210429,"Western Oregon University","Race.ethnicity.unknown.total..S2018_IS_RV..Instructional.staff..instructors.",4,"2018","Race Ethnicity Unknown","Instructor",72,0.0555555555555556
+"81",210429,"Western Oregon University","American.Indian.or.Alaska.Native.total..S2018_IS_RV..Instructional.staff..lecturers.",0,"2018","American Indian or Alaska Native","Lecturer",6,0
+"82",210429,"Western Oregon University","Asian.total..S2018_IS_RV..Instructional.staff..lecturers.",0,"2018","Asian","Lecturer",6,0
+"83",210429,"Western Oregon University","Black.or.African.American.total..S2018_IS_RV..Instructional.staff..lecturers.",0,"2018","Black or African American","Lecturer",6,0
+"84",210429,"Western Oregon University","Hispanic.or.Latino.total..S2018_IS_RV..Instructional.staff..lecturers.",0,"2018","Hispanic or Latino","Lecturer",6,0
+"85",210429,"Western Oregon University","Native.Hawaiian.or.Other.Pacific.Islander.total..S2018_IS_RV..Instructional.staff..lecturers.",0,"2018","Native Hawaiian or Other Pacific Islander","Lecturer",6,0
+"86",210429,"Western Oregon University","White.total..S2018_IS_RV..Instructional.staff..lecturers.",5,"2018","White","Lecturer",6,0.833333333333333
+"87",210429,"Western Oregon University","Two.or.more.races.total..S2018_IS_RV..Instructional.staff..lecturers.",0,"2018","Two or more Races","Lecturer",6,0
+"88",210429,"Western Oregon University","Race.ethnicity.unknown.total..S2018_IS_RV..Instructional.staff..lecturers.",1,"2018","Race Ethnicity Unknown","Lecturer",6,0.166666666666667
+"89",210429,"Western Oregon University","American.Indian.or.Alaska.Native.total..S2018_IS_RV..Instructional.staff..no.academic.rank.",NA,"2018","American Indian or Alaska Native","No Academic Rank ",NA,NA
+"90",210429,"Western Oregon University","Asian.total..S2018_IS_RV..Instructional.staff..no.academic.rank.",NA,"2018","Asian","No Academic Rank ",NA,NA
+"91",210429,"Western Oregon University","Black.or.African.American.total..S2018_IS_RV..Instructional.staff..no.academic.rank.",NA,"2018","Black or African American","No Academic Rank ",NA,NA
+"92",210429,"Western Oregon University","Hispanic.or.Latino.total..S2018_IS_RV..Instructional.staff..no.academic.rank.",NA,"2018","Hispanic or Latino","No Academic Rank ",NA,NA
+"93",210429,"Western Oregon University","Native.Hawaiian.or.Other.Pacific.Islander.total..S2018_IS_RV..Instructional.staff..no.academic.rank.",NA,"2018","Native Hawaiian or Other Pacific Islander","No Academic Rank ",NA,NA
+"94",210429,"Western Oregon University","White.total..S2018_IS_RV..Instructional.staff..no.academic.rank.",NA,"2018","White","No Academic Rank ",NA,NA
+"95",210429,"Western Oregon University","Two.or.more.races.total..S2018_IS_RV..Instructional.staff..no.academic.rank.",NA,"2018","Two or more Races","No Academic Rank ",NA,NA
+"96",210429,"Western Oregon University","Race.ethnicity.unknown.total..S2018_IS_RV..Instructional.staff..no.academic.rank.",NA,"2018","Race Ethnicity Unknown","No Academic Rank ",NA,NA
+"97",210429,"Western Oregon University","American.Indian.or.Alaska.Native.total..S2017_IS_RV..Instructional.staff..professors.",0,"2017","American Indian or Alaska Native","Professor",87,0
+"98",210429,"Western Oregon University","Asian.total..S2017_IS_RV..Instructional.staff..professors.",3,"2017","Asian","Professor",87,0.0344827586206897
+"99",210429,"Western Oregon University","Black.or.African.American.total..S2017_IS_RV..Instructional.staff..professors.",2,"2017","Black or African American","Professor",87,0.0229885057471264
+"100",210429,"Western Oregon University","Hispanic.or.Latino.total..S2017_IS_RV..Instructional.staff..professors.",2,"2017","Hispanic or Latino","Professor",87,0.0229885057471264
+"101",210429,"Western Oregon University","Native.Hawaiian.or.Other.Pacific.Islander.total..S2017_IS_RV..Instructional.staff..professors.",0,"2017","Native Hawaiian or Other Pacific Islander","Professor",87,0
+"102",210429,"Western Oregon University","White.total..S2017_IS_RV..Instructional.staff..professors.",78,"2017","White","Professor",87,0.896551724137931
+"103",210429,"Western Oregon University","Two.or.more.races.total..S2017_IS_RV..Instructional.staff..professors.",0,"2017","Two or more Races","Professor",87,0
+"104",210429,"Western Oregon University","Race.ethnicity.unknown.total..S2017_IS_RV..Instructional.staff..professors.",2,"2017","Race Ethnicity Unknown","Professor",87,0.0229885057471264
+"105",210429,"Western Oregon University","American.Indian.or.Alaska.Native.total..S2017_IS_RV..Instructional.staff..associate.professors.",0,"2017","American Indian or Alaska Native","Associate Professor",51,0
+"106",210429,"Western Oregon University","Asian.total..S2017_IS_RV..Instructional.staff..associate.professors.",2,"2017","Asian","Associate Professor",51,0.0392156862745098
+"107",210429,"Western Oregon University","Black.or.African.American.total..S2017_IS_RV..Instructional.staff..associate.professors.",1,"2017","Black or African American","Associate Professor",51,0.0196078431372549
+"108",210429,"Western Oregon University","Hispanic.or.Latino.total..S2017_IS_RV..Instructional.staff..associate.professors.",6,"2017","Hispanic or Latino","Associate Professor",51,0.117647058823529
+"109",210429,"Western Oregon University","Native.Hawaiian.or.Other.Pacific.Islander.total..S2017_IS_RV..Instructional.staff..associate.professors.",0,"2017","Native Hawaiian or Other Pacific Islander","Associate Professor",51,0
+"110",210429,"Western Oregon University","White.total..S2017_IS_RV..Instructional.staff..associate.professors.",40,"2017","White","Associate Professor",51,0.784313725490196
+"111",210429,"Western Oregon University","Two.or.more.races.total..S2017_IS_RV..Instructional.staff..associate.professors.",0,"2017","Two or more Races","Associate Professor",51,0
+"112",210429,"Western Oregon University","Race.ethnicity.unknown.total..S2017_IS_RV..Instructional.staff..associate.professors.",2,"2017","Race Ethnicity Unknown","Associate Professor",51,0.0392156862745098
+"113",210429,"Western Oregon University","American.Indian.or.Alaska.Native.total..S2017_IS_RV..Instructional.staff..assistant.professors.",0,"2017","American Indian or Alaska Native","Assistant Professor",64,0
+"114",210429,"Western Oregon University","Asian.total..S2017_IS_RV..Instructional.staff..assistant.professors.",4,"2017","Asian","Assistant Professor",64,0.0625
+"115",210429,"Western Oregon University","Black.or.African.American.total..S2017_IS_RV..Instructional.staff..assistant.professors.",0,"2017","Black or African American","Assistant Professor",64,0
+"116",210429,"Western Oregon University","Hispanic.or.Latino.total..S2017_IS_RV..Instructional.staff..assistant.professors.",2,"2017","Hispanic or Latino","Assistant Professor",64,0.03125
+"117",210429,"Western Oregon University","Native.Hawaiian.or.Other.Pacific.Islander.total..S2017_IS_RV..Instructional.staff..assistant.professors.",0,"2017","Native Hawaiian or Other Pacific Islander","Assistant Professor",64,0
+"118",210429,"Western Oregon University","White.total..S2017_IS_RV..Instructional.staff..assistant.professors.",45,"2017","White","Assistant Professor",64,0.703125
+"119",210429,"Western Oregon University","Two.or.more.races.total..S2017_IS_RV..Instructional.staff..assistant.professors.",0,"2017","Two or more Races","Assistant Professor",64,0
+"120",210429,"Western Oregon University","Race.ethnicity.unknown.total..S2017_IS_RV..Instructional.staff..assistant.professors.",8,"2017","Race Ethnicity Unknown","Assistant Professor",64,0.125
+"121",210429,"Western Oregon University","American.Indian.or.Alaska.Native.total..S2017_IS_RV..Instructional.staff..instructors.",0,"2017","American Indian or Alaska Native","Instructor",76,0
+"122",210429,"Western Oregon University","Asian.total..S2017_IS_RV..Instructional.staff..instructors.",2,"2017","Asian","Instructor",76,0.0263157894736842
+"123",210429,"Western Oregon University","Black.or.African.American.total..S2017_IS_RV..Instructional.staff..instructors.",0,"2017","Black or African American","Instructor",76,0
+"124",210429,"Western Oregon University","Hispanic.or.Latino.total..S2017_IS_RV..Instructional.staff..instructors.",5,"2017","Hispanic or Latino","Instructor",76,0.0657894736842105
+"125",210429,"Western Oregon University","Native.Hawaiian.or.Other.Pacific.Islander.total..S2017_IS_RV..Instructional.staff..instructors.",1,"2017","Native Hawaiian or Other Pacific Islander","Instructor",76,0.0131578947368421
+"126",210429,"Western Oregon University","White.total..S2017_IS_RV..Instructional.staff..instructors.",57,"2017","White","Instructor",76,0.75
+"127",210429,"Western Oregon University","Two.or.more.races.total..S2017_IS_RV..Instructional.staff..instructors.",3,"2017","Two or more Races","Instructor",76,0.0394736842105263
+"128",210429,"Western Oregon University","Race.ethnicity.unknown.total..S2017_IS_RV..Instructional.staff..instructors.",7,"2017","Race Ethnicity Unknown","Instructor",76,0.0921052631578947
+"129",210429,"Western Oregon University","American.Indian.or.Alaska.Native.total..S2017_IS_RV..Instructional.staff..lecturers.",0,"2017","American Indian or Alaska Native","Lecturer",9,0
+"130",210429,"Western Oregon University","Asian.total..S2017_IS_RV..Instructional.staff..lecturers.",0,"2017","Asian","Lecturer",9,0
+"131",210429,"Western Oregon University","Black.or.African.American.total..S2017_IS_RV..Instructional.staff..lecturers.",0,"2017","Black or African American","Lecturer",9,0
+"132",210429,"Western Oregon University","Hispanic.or.Latino.total..S2017_IS_RV..Instructional.staff..lecturers.",0,"2017","Hispanic or Latino","Lecturer",9,0
+"133",210429,"Western Oregon University","Native.Hawaiian.or.Other.Pacific.Islander.total..S2017_IS_RV..Instructional.staff..lecturers.",0,"2017","Native Hawaiian or Other Pacific Islander","Lecturer",9,0
+"134",210429,"Western Oregon University","White.total..S2017_IS_RV..Instructional.staff..lecturers.",9,"2017","White","Lecturer",9,1
+"135",210429,"Western Oregon University","Two.or.more.races.total..S2017_IS_RV..Instructional.staff..lecturers.",0,"2017","Two or more Races","Lecturer",9,0
+"136",210429,"Western Oregon University","Race.ethnicity.unknown.total..S2017_IS_RV..Instructional.staff..lecturers.",0,"2017","Race Ethnicity Unknown","Lecturer",9,0
+"137",210429,"Western Oregon University","American.Indian.or.Alaska.Native.total..S2017_IS_RV..Instructional.staff..no.academic.rank.",NA,"2017","American Indian or Alaska Native","No Academic Rank ",NA,NA
+"138",210429,"Western Oregon University","Asian.total..S2017_IS_RV..Instructional.staff..no.academic.rank.",NA,"2017","Asian","No Academic Rank ",NA,NA
+"139",210429,"Western Oregon University","Black.or.African.American.total..S2017_IS_RV..Instructional.staff..no.academic.rank.",NA,"2017","Black or African American","No Academic Rank ",NA,NA
+"140",210429,"Western Oregon University","Hispanic.or.Latino.total..S2017_IS_RV..Instructional.staff..no.academic.rank.",NA,"2017","Hispanic or Latino","No Academic Rank ",NA,NA
+"141",210429,"Western Oregon University","Native.Hawaiian.or.Other.Pacific.Islander.total..S2017_IS_RV..Instructional.staff..no.academic.rank.",NA,"2017","Native Hawaiian or Other Pacific Islander","No Academic Rank ",NA,NA
+"142",210429,"Western Oregon University","White.total..S2017_IS_RV..Instructional.staff..no.academic.rank.",NA,"2017","White","No Academic Rank ",NA,NA
+"143",210429,"Western Oregon University","Two.or.more.races.total..S2017_IS_RV..Instructional.staff..no.academic.rank.",NA,"2017","Two or more Races","No Academic Rank ",NA,NA
+"144",210429,"Western Oregon University","Race.ethnicity.unknown.total..S2017_IS_RV..Instructional.staff..no.academic.rank.",NA,"2017","Race Ethnicity Unknown","No Academic Rank ",NA,NA
+"145",210429,"Western Oregon University","American.Indian.or.Alaska.Native.total..S2016_IS_RV..Instructional.staff..professors.",0,"2016","American Indian or Alaska Native","Professor",90,0
+"146",210429,"Western Oregon University","Asian.total..S2016_IS_RV..Instructional.staff..professors.",3,"2016","Asian","Professor",90,0.0333333333333333
+"147",210429,"Western Oregon University","Black.or.African.American.total..S2016_IS_RV..Instructional.staff..professors.",2,"2016","Black or African American","Professor",90,0.0222222222222222
+"148",210429,"Western Oregon University","Hispanic.or.Latino.total..S2016_IS_RV..Instructional.staff..professors.",2,"2016","Hispanic or Latino","Professor",90,0.0222222222222222
+"149",210429,"Western Oregon University","Native.Hawaiian.or.Other.Pacific.Islander.total..S2016_IS_RV..Instructional.staff..professors.",0,"2016","Native Hawaiian or Other Pacific Islander","Professor",90,0
+"150",210429,"Western Oregon University","White.total..S2016_IS_RV..Instructional.staff..professors.",81,"2016","White","Professor",90,0.9
+"151",210429,"Western Oregon University","Two.or.more.races.total..S2016_IS_RV..Instructional.staff..professors.",0,"2016","Two or more Races","Professor",90,0
+"152",210429,"Western Oregon University","Race.ethnicity.unknown.total..S2016_IS_RV..Instructional.staff..professors.",2,"2016","Race Ethnicity Unknown","Professor",90,0.0222222222222222
+"153",210429,"Western Oregon University","American.Indian.or.Alaska.Native.total..S2016_IS_RV..Instructional.staff..associate.professors.",0,"2016","American Indian or Alaska Native","Associate Professor",48,0
+"154",210429,"Western Oregon University","Asian.total..S2016_IS_RV..Instructional.staff..associate.professors.",1,"2016","Asian","Associate Professor",48,0.0208333333333333
+"155",210429,"Western Oregon University","Black.or.African.American.total..S2016_IS_RV..Instructional.staff..associate.professors.",1,"2016","Black or African American","Associate Professor",48,0.0208333333333333
+"156",210429,"Western Oregon University","Hispanic.or.Latino.total..S2016_IS_RV..Instructional.staff..associate.professors.",3,"2016","Hispanic or Latino","Associate Professor",48,0.0625
+"157",210429,"Western Oregon University","Native.Hawaiian.or.Other.Pacific.Islander.total..S2016_IS_RV..Instructional.staff..associate.professors.",0,"2016","Native Hawaiian or Other Pacific Islander","Associate Professor",48,0
+"158",210429,"Western Oregon University","White.total..S2016_IS_RV..Instructional.staff..associate.professors.",39,"2016","White","Associate Professor",48,0.8125
+"159",210429,"Western Oregon University","Two.or.more.races.total..S2016_IS_RV..Instructional.staff..associate.professors.",0,"2016","Two or more Races","Associate Professor",48,0
+"160",210429,"Western Oregon University","Race.ethnicity.unknown.total..S2016_IS_RV..Instructional.staff..associate.professors.",0,"2016","Race Ethnicity Unknown","Associate Professor",48,0
+"161",210429,"Western Oregon University","American.Indian.or.Alaska.Native.total..S2016_IS_RV..Instructional.staff..assistant.professors.",0,"2016","American Indian or Alaska Native","Assistant Professor",65,0
+"162",210429,"Western Oregon University","Asian.total..S2016_IS_RV..Instructional.staff..assistant.professors.",3,"2016","Asian","Assistant Professor",65,0.0461538461538462
+"163",210429,"Western Oregon University","Black.or.African.American.total..S2016_IS_RV..Instructional.staff..assistant.professors.",0,"2016","Black or African American","Assistant Professor",65,0
+"164",210429,"Western Oregon University","Hispanic.or.Latino.total..S2016_IS_RV..Instructional.staff..assistant.professors.",3,"2016","Hispanic or Latino","Assistant Professor",65,0.0461538461538462
+"165",210429,"Western Oregon University","Native.Hawaiian.or.Other.Pacific.Islander.total..S2016_IS_RV..Instructional.staff..assistant.professors.",0,"2016","Native Hawaiian or Other Pacific Islander","Assistant Professor",65,0
+"166",210429,"Western Oregon University","White.total..S2016_IS_RV..Instructional.staff..assistant.professors.",48,"2016","White","Assistant Professor",65,0.738461538461539
+"167",210429,"Western Oregon University","Two.or.more.races.total..S2016_IS_RV..Instructional.staff..assistant.professors.",0,"2016","Two or more Races","Assistant Professor",65,0
+"168",210429,"Western Oregon University","Race.ethnicity.unknown.total..S2016_IS_RV..Instructional.staff..assistant.professors.",8,"2016","Race Ethnicity Unknown","Assistant Professor",65,0.123076923076923
+"169",210429,"Western Oregon University","American.Indian.or.Alaska.Native.total..S2016_IS_RV..Instructional.staff..instructors.",0,"2016","American Indian or Alaska Native","Instructor",79,0
+"170",210429,"Western Oregon University","Asian.total..S2016_IS_RV..Instructional.staff..instructors.",2,"2016","Asian","Instructor",79,0.0253164556962025
+"171",210429,"Western Oregon University","Black.or.African.American.total..S2016_IS_RV..Instructional.staff..instructors.",0,"2016","Black or African American","Instructor",79,0
+"172",210429,"Western Oregon University","Hispanic.or.Latino.total..S2016_IS_RV..Instructional.staff..instructors.",7,"2016","Hispanic or Latino","Instructor",79,0.0886075949367089
+"173",210429,"Western Oregon University","Native.Hawaiian.or.Other.Pacific.Islander.total..S2016_IS_RV..Instructional.staff..instructors.",1,"2016","Native Hawaiian or Other Pacific Islander","Instructor",79,0.0126582278481013
+"174",210429,"Western Oregon University","White.total..S2016_IS_RV..Instructional.staff..instructors.",61,"2016","White","Instructor",79,0.772151898734177
+"175",210429,"Western Oregon University","Two.or.more.races.total..S2016_IS_RV..Instructional.staff..instructors.",3,"2016","Two or more Races","Instructor",79,0.0379746835443038
+"176",210429,"Western Oregon University","Race.ethnicity.unknown.total..S2016_IS_RV..Instructional.staff..instructors.",4,"2016","Race Ethnicity Unknown","Instructor",79,0.0506329113924051
+"177",210429,"Western Oregon University","American.Indian.or.Alaska.Native.total..S2016_IS_RV..Instructional.staff..lecturers.",0,"2016","American Indian or Alaska Native","Lecturer",9,0
+"178",210429,"Western Oregon University","Asian.total..S2016_IS_RV..Instructional.staff..lecturers.",0,"2016","Asian","Lecturer",9,0
+"179",210429,"Western Oregon University","Black.or.African.American.total..S2016_IS_RV..Instructional.staff..lecturers.",0,"2016","Black or African American","Lecturer",9,0
+"180",210429,"Western Oregon University","Hispanic.or.Latino.total..S2016_IS_RV..Instructional.staff..lecturers.",0,"2016","Hispanic or Latino","Lecturer",9,0
+"181",210429,"Western Oregon University","Native.Hawaiian.or.Other.Pacific.Islander.total..S2016_IS_RV..Instructional.staff..lecturers.",0,"2016","Native Hawaiian or Other Pacific Islander","Lecturer",9,0
+"182",210429,"Western Oregon University","White.total..S2016_IS_RV..Instructional.staff..lecturers.",9,"2016","White","Lecturer",9,1
+"183",210429,"Western Oregon University","Two.or.more.races.total..S2016_IS_RV..Instructional.staff..lecturers.",0,"2016","Two or more Races","Lecturer",9,0
+"184",210429,"Western Oregon University","Race.ethnicity.unknown.total..S2016_IS_RV..Instructional.staff..lecturers.",0,"2016","Race Ethnicity Unknown","Lecturer",9,0
+"185",210429,"Western Oregon University","American.Indian.or.Alaska.Native.total..S2016_IS_RV..Instructional.staff..no.academic.rank.",NA,"2016","American Indian or Alaska Native","No Academic Rank ",NA,NA
+"186",210429,"Western Oregon University","Asian.total..S2016_IS_RV..Instructional.staff..no.academic.rank.",NA,"2016","Asian","No Academic Rank ",NA,NA
+"187",210429,"Western Oregon University","Black.or.African.American.total..S2016_IS_RV..Instructional.staff..no.academic.rank.",NA,"2016","Black or African American","No Academic Rank ",NA,NA
+"188",210429,"Western Oregon University","Hispanic.or.Latino.total..S2016_IS_RV..Instructional.staff..no.academic.rank.",NA,"2016","Hispanic or Latino","No Academic Rank ",NA,NA
+"189",210429,"Western Oregon University","Native.Hawaiian.or.Other.Pacific.Islander.total..S2016_IS_RV..Instructional.staff..no.academic.rank.",NA,"2016","Native Hawaiian or Other Pacific Islander","No Academic Rank ",NA,NA
+"190",210429,"Western Oregon University","White.total..S2016_IS_RV..Instructional.staff..no.academic.rank.",NA,"2016","White","No Academic Rank ",NA,NA
+"191",210429,"Western Oregon University","Two.or.more.races.total..S2016_IS_RV..Instructional.staff..no.academic.rank.",NA,"2016","Two or more Races","No Academic Rank ",NA,NA
+"192",210429,"Western Oregon University","Race.ethnicity.unknown.total..S2016_IS_RV..Instructional.staff..no.academic.rank.",NA,"2016","Race Ethnicity Unknown","No Academic Rank ",NA,NA
+"193",210429,"Western Oregon University","American.Indian.or.Alaska.Native.total..S2015_IS_RV..Instructional.staff..professors.",0,"2015","American Indian or Alaska Native","Professor",93,0
+"194",210429,"Western Oregon University","Asian.total..S2015_IS_RV..Instructional.staff..professors.",3,"2015","Asian","Professor",93,0.032258064516129
+"195",210429,"Western Oregon University","Black.or.African.American.total..S2015_IS_RV..Instructional.staff..professors.",2,"2015","Black or African American","Professor",93,0.021505376344086
+"196",210429,"Western Oregon University","Hispanic.or.Latino.total..S2015_IS_RV..Instructional.staff..professors.",3,"2015","Hispanic or Latino","Professor",93,0.032258064516129
+"197",210429,"Western Oregon University","Native.Hawaiian.or.Other.Pacific.Islander.total..S2015_IS_RV..Instructional.staff..professors.",0,"2015","Native Hawaiian or Other Pacific Islander","Professor",93,0
+"198",210429,"Western Oregon University","White.total..S2015_IS_RV..Instructional.staff..professors.",83,"2015","White","Professor",93,0.89247311827957
+"199",210429,"Western Oregon University","Two.or.more.races.total..S2015_IS_RV..Instructional.staff..professors.",0,"2015","Two or more Races","Professor",93,0
+"200",210429,"Western Oregon University","Race.ethnicity.unknown.total..S2015_IS_RV..Instructional.staff..professors.",2,"2015","Race Ethnicity Unknown","Professor",93,0.021505376344086
+"201",210429,"Western Oregon University","American.Indian.or.Alaska.Native.total..S2015_IS_RV..Instructional.staff..associate.professors.",0,"2015","American Indian or Alaska Native","Associate Professor",43,0
+"202",210429,"Western Oregon University","Asian.total..S2015_IS_RV..Instructional.staff..associate.professors.",1,"2015","Asian","Associate Professor",43,0.0232558139534884
+"203",210429,"Western Oregon University","Black.or.African.American.total..S2015_IS_RV..Instructional.staff..associate.professors.",2,"2015","Black or African American","Associate Professor",43,0.0465116279069767
+"204",210429,"Western Oregon University","Hispanic.or.Latino.total..S2015_IS_RV..Instructional.staff..associate.professors.",1,"2015","Hispanic or Latino","Associate Professor",43,0.0232558139534884
+"205",210429,"Western Oregon University","Native.Hawaiian.or.Other.Pacific.Islander.total..S2015_IS_RV..Instructional.staff..associate.professors.",0,"2015","Native Hawaiian or Other Pacific Islander","Associate Professor",43,0
+"206",210429,"Western Oregon University","White.total..S2015_IS_RV..Instructional.staff..associate.professors.",35,"2015","White","Associate Professor",43,0.813953488372093
+"207",210429,"Western Oregon University","Two.or.more.races.total..S2015_IS_RV..Instructional.staff..associate.professors.",0,"2015","Two or more Races","Associate Professor",43,0
+"208",210429,"Western Oregon University","Race.ethnicity.unknown.total..S2015_IS_RV..Instructional.staff..associate.professors.",0,"2015","Race Ethnicity Unknown","Associate Professor",43,0
+"209",210429,"Western Oregon University","American.Indian.or.Alaska.Native.total..S2015_IS_RV..Instructional.staff..assistant.professors.",0,"2015","American Indian or Alaska Native","Assistant Professor",65,0
+"210",210429,"Western Oregon University","Asian.total..S2015_IS_RV..Instructional.staff..assistant.professors.",3,"2015","Asian","Assistant Professor",65,0.0461538461538462
+"211",210429,"Western Oregon University","Black.or.African.American.total..S2015_IS_RV..Instructional.staff..assistant.professors.",0,"2015","Black or African American","Assistant Professor",65,0
+"212",210429,"Western Oregon University","Hispanic.or.Latino.total..S2015_IS_RV..Instructional.staff..assistant.professors.",4,"2015","Hispanic or Latino","Assistant Professor",65,0.0615384615384615
+"213",210429,"Western Oregon University","Native.Hawaiian.or.Other.Pacific.Islander.total..S2015_IS_RV..Instructional.staff..assistant.professors.",0,"2015","Native Hawaiian or Other Pacific Islander","Assistant Professor",65,0
+"214",210429,"Western Oregon University","White.total..S2015_IS_RV..Instructional.staff..assistant.professors.",50,"2015","White","Assistant Professor",65,0.769230769230769
+"215",210429,"Western Oregon University","Two.or.more.races.total..S2015_IS_RV..Instructional.staff..assistant.professors.",0,"2015","Two or more Races","Assistant Professor",65,0
+"216",210429,"Western Oregon University","Race.ethnicity.unknown.total..S2015_IS_RV..Instructional.staff..assistant.professors.",4,"2015","Race Ethnicity Unknown","Assistant Professor",65,0.0615384615384615
+"217",210429,"Western Oregon University","American.Indian.or.Alaska.Native.total..S2015_IS_RV..Instructional.staff..instructors.",0,"2015","American Indian or Alaska Native","Instructor",63,0
+"218",210429,"Western Oregon University","Asian.total..S2015_IS_RV..Instructional.staff..instructors.",3,"2015","Asian","Instructor",63,0.0476190476190476
+"219",210429,"Western Oregon University","Black.or.African.American.total..S2015_IS_RV..Instructional.staff..instructors.",0,"2015","Black or African American","Instructor",63,0
+"220",210429,"Western Oregon University","Hispanic.or.Latino.total..S2015_IS_RV..Instructional.staff..instructors.",6,"2015","Hispanic or Latino","Instructor",63,0.0952380952380952
+"221",210429,"Western Oregon University","Native.Hawaiian.or.Other.Pacific.Islander.total..S2015_IS_RV..Instructional.staff..instructors.",1,"2015","Native Hawaiian or Other Pacific Islander","Instructor",63,0.0158730158730159
+"222",210429,"Western Oregon University","White.total..S2015_IS_RV..Instructional.staff..instructors.",51,"2015","White","Instructor",63,0.80952380952381
+"223",210429,"Western Oregon University","Two.or.more.races.total..S2015_IS_RV..Instructional.staff..instructors.",1,"2015","Two or more Races","Instructor",63,0.0158730158730159
+"224",210429,"Western Oregon University","Race.ethnicity.unknown.total..S2015_IS_RV..Instructional.staff..instructors.",1,"2015","Race Ethnicity Unknown","Instructor",63,0.0158730158730159
+"225",210429,"Western Oregon University","American.Indian.or.Alaska.Native.total..S2015_IS_RV..Instructional.staff..lecturers.",0,"2015","American Indian or Alaska Native","Lecturer",9,0
+"226",210429,"Western Oregon University","Asian.total..S2015_IS_RV..Instructional.staff..lecturers.",0,"2015","Asian","Lecturer",9,0
+"227",210429,"Western Oregon University","Black.or.African.American.total..S2015_IS_RV..Instructional.staff..lecturers.",0,"2015","Black or African American","Lecturer",9,0
+"228",210429,"Western Oregon University","Hispanic.or.Latino.total..S2015_IS_RV..Instructional.staff..lecturers.",0,"2015","Hispanic or Latino","Lecturer",9,0
+"229",210429,"Western Oregon University","Native.Hawaiian.or.Other.Pacific.Islander.total..S2015_IS_RV..Instructional.staff..lecturers.",0,"2015","Native Hawaiian or Other Pacific Islander","Lecturer",9,0
+"230",210429,"Western Oregon University","White.total..S2015_IS_RV..Instructional.staff..lecturers.",8,"2015","White","Lecturer",9,0.888888888888889
+"231",210429,"Western Oregon University","Two.or.more.races.total..S2015_IS_RV..Instructional.staff..lecturers.",1,"2015","Two or more Races","Lecturer",9,0.111111111111111
+"232",210429,"Western Oregon University","Race.ethnicity.unknown.total..S2015_IS_RV..Instructional.staff..lecturers.",0,"2015","Race Ethnicity Unknown","Lecturer",9,0
+"233",210429,"Western Oregon University","American.Indian.or.Alaska.Native.total..S2015_IS_RV..Instructional.staff..no.academic.rank.",NA,"2015","American Indian or Alaska Native","No Academic Rank ",NA,NA
+"234",210429,"Western Oregon University","Asian.total..S2015_IS_RV..Instructional.staff..no.academic.rank.",NA,"2015","Asian","No Academic Rank ",NA,NA
+"235",210429,"Western Oregon University","Black.or.African.American.total..S2015_IS_RV..Instructional.staff..no.academic.rank.",NA,"2015","Black or African American","No Academic Rank ",NA,NA
+"236",210429,"Western Oregon University","Hispanic.or.Latino.total..S2015_IS_RV..Instructional.staff..no.academic.rank.",NA,"2015","Hispanic or Latino","No Academic Rank ",NA,NA
+"237",210429,"Western Oregon University","Native.Hawaiian.or.Other.Pacific.Islander.total..S2015_IS_RV..Instructional.staff..no.academic.rank.",NA,"2015","Native Hawaiian or Other Pacific Islander","No Academic Rank ",NA,NA
+"238",210429,"Western Oregon University","White.total..S2015_IS_RV..Instructional.staff..no.academic.rank.",NA,"2015","White","No Academic Rank ",NA,NA
+"239",210429,"Western Oregon University","Two.or.more.races.total..S2015_IS_RV..Instructional.staff..no.academic.rank.",NA,"2015","Two or more Races","No Academic Rank ",NA,NA
+"240",210429,"Western Oregon University","Race.ethnicity.unknown.total..S2015_IS_RV..Instructional.staff..no.academic.rank.",NA,"2015","Race Ethnicity Unknown","No Academic Rank ",NA,NA
+"241",210429,"Western Oregon University","American.Indian.or.Alaska.Native.total..S2014_IS_RV..Instructional.staff..professors.",0,"2014","American Indian or Alaska Native","Professor",87,0
+"242",210429,"Western Oregon University","Asian.total..S2014_IS_RV..Instructional.staff..professors.",3,"2014","Asian","Professor",87,0.0344827586206897
+"243",210429,"Western Oregon University","Black.or.African.American.total..S2014_IS_RV..Instructional.staff..professors.",1,"2014","Black or African American","Professor",87,0.0114942528735632
+"244",210429,"Western Oregon University","Hispanic.or.Latino.total..S2014_IS_RV..Instructional.staff..professors.",3,"2014","Hispanic or Latino","Professor",87,0.0344827586206897
+"245",210429,"Western Oregon University","Native.Hawaiian.or.Other.Pacific.Islander.total..S2014_IS_RV..Instructional.staff..professors.",0,"2014","Native Hawaiian or Other Pacific Islander","Professor",87,0
+"246",210429,"Western Oregon University","White.total..S2014_IS_RV..Instructional.staff..professors.",78,"2014","White","Professor",87,0.896551724137931
+"247",210429,"Western Oregon University","Two.or.more.races.total..S2014_IS_RV..Instructional.staff..professors.",0,"2014","Two or more Races","Professor",87,0
+"248",210429,"Western Oregon University","Race.ethnicity.unknown.total..S2014_IS_RV..Instructional.staff..professors.",2,"2014","Race Ethnicity Unknown","Professor",87,0.0229885057471264
+"249",210429,"Western Oregon University","American.Indian.or.Alaska.Native.total..S2014_IS_RV..Instructional.staff..associate.professors.",0,"2014","American Indian or Alaska Native","Associate Professor",41,0
+"250",210429,"Western Oregon University","Asian.total..S2014_IS_RV..Instructional.staff..associate.professors.",1,"2014","Asian","Associate Professor",41,0.024390243902439
+"251",210429,"Western Oregon University","Black.or.African.American.total..S2014_IS_RV..Instructional.staff..associate.professors.",3,"2014","Black or African American","Associate Professor",41,0.0731707317073171
+"252",210429,"Western Oregon University","Hispanic.or.Latino.total..S2014_IS_RV..Instructional.staff..associate.professors.",0,"2014","Hispanic or Latino","Associate Professor",41,0
+"253",210429,"Western Oregon University","Native.Hawaiian.or.Other.Pacific.Islander.total..S2014_IS_RV..Instructional.staff..associate.professors.",0,"2014","Native Hawaiian or Other Pacific Islander","Associate Professor",41,0
+"254",210429,"Western Oregon University","White.total..S2014_IS_RV..Instructional.staff..associate.professors.",34,"2014","White","Associate Professor",41,0.829268292682927
+"255",210429,"Western Oregon University","Two.or.more.races.total..S2014_IS_RV..Instructional.staff..associate.professors.",0,"2014","Two or more Races","Associate Professor",41,0
+"256",210429,"Western Oregon University","Race.ethnicity.unknown.total..S2014_IS_RV..Instructional.staff..associate.professors.",0,"2014","Race Ethnicity Unknown","Associate Professor",41,0
+"257",210429,"Western Oregon University","American.Indian.or.Alaska.Native.total..S2014_IS_RV..Instructional.staff..assistant.professors.",0,"2014","American Indian or Alaska Native","Assistant Professor",55,0
+"258",210429,"Western Oregon University","Asian.total..S2014_IS_RV..Instructional.staff..assistant.professors.",1,"2014","Asian","Assistant Professor",55,0.0181818181818182
+"259",210429,"Western Oregon University","Black.or.African.American.total..S2014_IS_RV..Instructional.staff..assistant.professors.",1,"2014","Black or African American","Assistant Professor",55,0.0181818181818182
+"260",210429,"Western Oregon University","Hispanic.or.Latino.total..S2014_IS_RV..Instructional.staff..assistant.professors.",4,"2014","Hispanic or Latino","Assistant Professor",55,0.0727272727272727
+"261",210429,"Western Oregon University","Native.Hawaiian.or.Other.Pacific.Islander.total..S2014_IS_RV..Instructional.staff..assistant.professors.",0,"2014","Native Hawaiian or Other Pacific Islander","Assistant Professor",55,0
+"262",210429,"Western Oregon University","White.total..S2014_IS_RV..Instructional.staff..assistant.professors.",43,"2014","White","Assistant Professor",55,0.781818181818182
+"263",210429,"Western Oregon University","Two.or.more.races.total..S2014_IS_RV..Instructional.staff..assistant.professors.",0,"2014","Two or more Races","Assistant Professor",55,0
+"264",210429,"Western Oregon University","Race.ethnicity.unknown.total..S2014_IS_RV..Instructional.staff..assistant.professors.",3,"2014","Race Ethnicity Unknown","Assistant Professor",55,0.0545454545454545
+"265",210429,"Western Oregon University","American.Indian.or.Alaska.Native.total..S2014_IS_RV..Instructional.staff..instructors.",0,"2014","American Indian or Alaska Native","Instructor",37,0
+"266",210429,"Western Oregon University","Asian.total..S2014_IS_RV..Instructional.staff..instructors.",1,"2014","Asian","Instructor",37,0.027027027027027
+"267",210429,"Western Oregon University","Black.or.African.American.total..S2014_IS_RV..Instructional.staff..instructors.",0,"2014","Black or African American","Instructor",37,0
+"268",210429,"Western Oregon University","Hispanic.or.Latino.total..S2014_IS_RV..Instructional.staff..instructors.",3,"2014","Hispanic or Latino","Instructor",37,0.0810810810810811
+"269",210429,"Western Oregon University","Native.Hawaiian.or.Other.Pacific.Islander.total..S2014_IS_RV..Instructional.staff..instructors.",0,"2014","Native Hawaiian or Other Pacific Islander","Instructor",37,0
+"270",210429,"Western Oregon University","White.total..S2014_IS_RV..Instructional.staff..instructors.",31,"2014","White","Instructor",37,0.837837837837838
+"271",210429,"Western Oregon University","Two.or.more.races.total..S2014_IS_RV..Instructional.staff..instructors.",1,"2014","Two or more Races","Instructor",37,0.027027027027027
+"272",210429,"Western Oregon University","Race.ethnicity.unknown.total..S2014_IS_RV..Instructional.staff..instructors.",1,"2014","Race Ethnicity Unknown","Instructor",37,0.027027027027027
+"273",210429,"Western Oregon University","American.Indian.or.Alaska.Native.total..S2014_IS_RV..Instructional.staff..lecturers.",0,"2014","American Indian or Alaska Native","Lecturer",4,0
+"274",210429,"Western Oregon University","Asian.total..S2014_IS_RV..Instructional.staff..lecturers.",0,"2014","Asian","Lecturer",4,0
+"275",210429,"Western Oregon University","Black.or.African.American.total..S2014_IS_RV..Instructional.staff..lecturers.",0,"2014","Black or African American","Lecturer",4,0
+"276",210429,"Western Oregon University","Hispanic.or.Latino.total..S2014_IS_RV..Instructional.staff..lecturers.",0,"2014","Hispanic or Latino","Lecturer",4,0
+"277",210429,"Western Oregon University","Native.Hawaiian.or.Other.Pacific.Islander.total..S2014_IS_RV..Instructional.staff..lecturers.",0,"2014","Native Hawaiian or Other Pacific Islander","Lecturer",4,0
+"278",210429,"Western Oregon University","White.total..S2014_IS_RV..Instructional.staff..lecturers.",4,"2014","White","Lecturer",4,1
+"279",210429,"Western Oregon University","Two.or.more.races.total..S2014_IS_RV..Instructional.staff..lecturers.",0,"2014","Two or more Races","Lecturer",4,0
+"280",210429,"Western Oregon University","Race.ethnicity.unknown.total..S2014_IS_RV..Instructional.staff..lecturers.",0,"2014","Race Ethnicity Unknown","Lecturer",4,0
+"281",210429,"Western Oregon University","American.Indian.or.Alaska.Native.total..S2014_IS_RV..Instructional.staff..no.academic.rank.",0,"2014","American Indian or Alaska Native","No Academic Rank ",1,0
+"282",210429,"Western Oregon University","Asian.total..S2014_IS_RV..Instructional.staff..no.academic.rank.",0,"2014","Asian","No Academic Rank ",1,0
+"283",210429,"Western Oregon University","Black.or.African.American.total..S2014_IS_RV..Instructional.staff..no.academic.rank.",0,"2014","Black or African American","No Academic Rank ",1,0
+"284",210429,"Western Oregon University","Hispanic.or.Latino.total..S2014_IS_RV..Instructional.staff..no.academic.rank.",0,"2014","Hispanic or Latino","No Academic Rank ",1,0
+"285",210429,"Western Oregon University","Native.Hawaiian.or.Other.Pacific.Islander.total..S2014_IS_RV..Instructional.staff..no.academic.rank.",0,"2014","Native Hawaiian or Other Pacific Islander","No Academic Rank ",1,0
+"286",210429,"Western Oregon University","White.total..S2014_IS_RV..Instructional.staff..no.academic.rank.",0,"2014","White","No Academic Rank ",1,0
+"287",210429,"Western Oregon University","Two.or.more.races.total..S2014_IS_RV..Instructional.staff..no.academic.rank.",0,"2014","Two or more Races","No Academic Rank ",1,0
+"288",210429,"Western Oregon University","Race.ethnicity.unknown.total..S2014_IS_RV..Instructional.staff..no.academic.rank.",0,"2014","Race Ethnicity Unknown","No Academic Rank ",1,0
+"289",210429,"Western Oregon University","American.Indian.or.Alaska.Native.total..S2013_IS_RV..Instructional.staff..professors.",0,"2013","American Indian or Alaska Native","Professor",77,0
+"290",210429,"Western Oregon University","Asian.total..S2013_IS_RV..Instructional.staff..professors.",3,"2013","Asian","Professor",77,0.038961038961039
+"291",210429,"Western Oregon University","Black.or.African.American.total..S2013_IS_RV..Instructional.staff..professors.",1,"2013","Black or African American","Professor",77,0.012987012987013
+"292",210429,"Western Oregon University","Hispanic.or.Latino.total..S2013_IS_RV..Instructional.staff..professors.",4,"2013","Hispanic or Latino","Professor",77,0.051948051948052
+"293",210429,"Western Oregon University","Native.Hawaiian.or.Other.Pacific.Islander.total..S2013_IS_RV..Instructional.staff..professors.",0,"2013","Native Hawaiian or Other Pacific Islander","Professor",77,0
+"294",210429,"Western Oregon University","White.total..S2013_IS_RV..Instructional.staff..professors.",67,"2013","White","Professor",77,0.87012987012987
+"295",210429,"Western Oregon University","Two.or.more.races.total..S2013_IS_RV..Instructional.staff..professors.",0,"2013","Two or more Races","Professor",77,0
+"296",210429,"Western Oregon University","Race.ethnicity.unknown.total..S2013_IS_RV..Instructional.staff..professors.",2,"2013","Race Ethnicity Unknown","Professor",77,0.025974025974026
+"297",210429,"Western Oregon University","American.Indian.or.Alaska.Native.total..S2013_IS_RV..Instructional.staff..associate.professors.",0,"2013","American Indian or Alaska Native","Associate Professor",47,0
+"298",210429,"Western Oregon University","Asian.total..S2013_IS_RV..Instructional.staff..associate.professors.",0,"2013","Asian","Associate Professor",47,0
+"299",210429,"Western Oregon University","Black.or.African.American.total..S2013_IS_RV..Instructional.staff..associate.professors.",3,"2013","Black or African American","Associate Professor",47,0.0638297872340425
+"300",210429,"Western Oregon University","Hispanic.or.Latino.total..S2013_IS_RV..Instructional.staff..associate.professors.",0,"2013","Hispanic or Latino","Associate Professor",47,0
+"301",210429,"Western Oregon University","Native.Hawaiian.or.Other.Pacific.Islander.total..S2013_IS_RV..Instructional.staff..associate.professors.",0,"2013","Native Hawaiian or Other Pacific Islander","Associate Professor",47,0
+"302",210429,"Western Oregon University","White.total..S2013_IS_RV..Instructional.staff..associate.professors.",41,"2013","White","Associate Professor",47,0.872340425531915
+"303",210429,"Western Oregon University","Two.or.more.races.total..S2013_IS_RV..Instructional.staff..associate.professors.",0,"2013","Two or more Races","Associate Professor",47,0
+"304",210429,"Western Oregon University","Race.ethnicity.unknown.total..S2013_IS_RV..Instructional.staff..associate.professors.",1,"2013","Race Ethnicity Unknown","Associate Professor",47,0.0212765957446809
+"305",210429,"Western Oregon University","American.Indian.or.Alaska.Native.total..S2013_IS_RV..Instructional.staff..assistant.professors.",0,"2013","American Indian or Alaska Native","Assistant Professor",53,0
+"306",210429,"Western Oregon University","Asian.total..S2013_IS_RV..Instructional.staff..assistant.professors.",2,"2013","Asian","Assistant Professor",53,0.0377358490566038
+"307",210429,"Western Oregon University","Black.or.African.American.total..S2013_IS_RV..Instructional.staff..assistant.professors.",1,"2013","Black or African American","Assistant Professor",53,0.0188679245283019
+"308",210429,"Western Oregon University","Hispanic.or.Latino.total..S2013_IS_RV..Instructional.staff..assistant.professors.",3,"2013","Hispanic or Latino","Assistant Professor",53,0.0566037735849057
+"309",210429,"Western Oregon University","Native.Hawaiian.or.Other.Pacific.Islander.total..S2013_IS_RV..Instructional.staff..assistant.professors.",0,"2013","Native Hawaiian or Other Pacific Islander","Assistant Professor",53,0
+"310",210429,"Western Oregon University","White.total..S2013_IS_RV..Instructional.staff..assistant.professors.",42,"2013","White","Assistant Professor",53,0.792452830188679
+"311",210429,"Western Oregon University","Two.or.more.races.total..S2013_IS_RV..Instructional.staff..assistant.professors.",0,"2013","Two or more Races","Assistant Professor",53,0
+"312",210429,"Western Oregon University","Race.ethnicity.unknown.total..S2013_IS_RV..Instructional.staff..assistant.professors.",2,"2013","Race Ethnicity Unknown","Assistant Professor",53,0.0377358490566038
+"313",210429,"Western Oregon University","American.Indian.or.Alaska.Native.total..S2013_IS_RV..Instructional.staff..instructors.",0,"2013","American Indian or Alaska Native","Instructor",39,0
+"314",210429,"Western Oregon University","Asian.total..S2013_IS_RV..Instructional.staff..instructors.",1,"2013","Asian","Instructor",39,0.0256410256410256
+"315",210429,"Western Oregon University","Black.or.African.American.total..S2013_IS_RV..Instructional.staff..instructors.",0,"2013","Black or African American","Instructor",39,0
+"316",210429,"Western Oregon University","Hispanic.or.Latino.total..S2013_IS_RV..Instructional.staff..instructors.",4,"2013","Hispanic or Latino","Instructor",39,0.102564102564103
+"317",210429,"Western Oregon University","Native.Hawaiian.or.Other.Pacific.Islander.total..S2013_IS_RV..Instructional.staff..instructors.",0,"2013","Native Hawaiian or Other Pacific Islander","Instructor",39,0
+"318",210429,"Western Oregon University","White.total..S2013_IS_RV..Instructional.staff..instructors.",33,"2013","White","Instructor",39,0.846153846153846
+"319",210429,"Western Oregon University","Two.or.more.races.total..S2013_IS_RV..Instructional.staff..instructors.",0,"2013","Two or more Races","Instructor",39,0
+"320",210429,"Western Oregon University","Race.ethnicity.unknown.total..S2013_IS_RV..Instructional.staff..instructors.",1,"2013","Race Ethnicity Unknown","Instructor",39,0.0256410256410256
+"321",210429,"Western Oregon University","American.Indian.or.Alaska.Native.total..S2013_IS_RV..Instructional.staff..lecturers.",0,"2013","American Indian or Alaska Native","Lecturer",4,0
+"322",210429,"Western Oregon University","Asian.total..S2013_IS_RV..Instructional.staff..lecturers.",0,"2013","Asian","Lecturer",4,0
+"323",210429,"Western Oregon University","Black.or.African.American.total..S2013_IS_RV..Instructional.staff..lecturers.",0,"2013","Black or African American","Lecturer",4,0
+"324",210429,"Western Oregon University","Hispanic.or.Latino.total..S2013_IS_RV..Instructional.staff..lecturers.",0,"2013","Hispanic or Latino","Lecturer",4,0
+"325",210429,"Western Oregon University","Native.Hawaiian.or.Other.Pacific.Islander.total..S2013_IS_RV..Instructional.staff..lecturers.",0,"2013","Native Hawaiian or Other Pacific Islander","Lecturer",4,0
+"326",210429,"Western Oregon University","White.total..S2013_IS_RV..Instructional.staff..lecturers.",4,"2013","White","Lecturer",4,1
+"327",210429,"Western Oregon University","Two.or.more.races.total..S2013_IS_RV..Instructional.staff..lecturers.",0,"2013","Two or more Races","Lecturer",4,0
+"328",210429,"Western Oregon University","Race.ethnicity.unknown.total..S2013_IS_RV..Instructional.staff..lecturers.",0,"2013","Race Ethnicity Unknown","Lecturer",4,0
+"329",210429,"Western Oregon University","American.Indian.or.Alaska.Native.total..S2013_IS_RV..Instructional.staff..no.academic.rank.",0,"2013","American Indian or Alaska Native","No Academic Rank ",1,0
+"330",210429,"Western Oregon University","Asian.total..S2013_IS_RV..Instructional.staff..no.academic.rank.",0,"2013","Asian","No Academic Rank ",1,0
+"331",210429,"Western Oregon University","Black.or.African.American.total..S2013_IS_RV..Instructional.staff..no.academic.rank.",0,"2013","Black or African American","No Academic Rank ",1,0
+"332",210429,"Western Oregon University","Hispanic.or.Latino.total..S2013_IS_RV..Instructional.staff..no.academic.rank.",0,"2013","Hispanic or Latino","No Academic Rank ",1,0
+"333",210429,"Western Oregon University","Native.Hawaiian.or.Other.Pacific.Islander.total..S2013_IS_RV..Instructional.staff..no.academic.rank.",0,"2013","Native Hawaiian or Other Pacific Islander","No Academic Rank ",1,0
+"334",210429,"Western Oregon University","White.total..S2013_IS_RV..Instructional.staff..no.academic.rank.",1,"2013","White","No Academic Rank ",1,1
+"335",210429,"Western Oregon University","Two.or.more.races.total..S2013_IS_RV..Instructional.staff..no.academic.rank.",0,"2013","Two or more Races","No Academic Rank ",1,0
+"336",210429,"Western Oregon University","Race.ethnicity.unknown.total..S2013_IS_RV..Instructional.staff..no.academic.rank.",0,"2013","Race Ethnicity Unknown","No Academic Rank ",1,0
+"337",210429,"Western Oregon University","American.Indian.or.Alaska.Native.total..S2012_IS_RV..Instructional.staff..professors.",0,"2012","American Indian or Alaska Native","Professor",71,0
+"338",210429,"Western Oregon University","Asian.total..S2012_IS_RV..Instructional.staff..professors.",3,"2012","Asian","Professor",71,0.0422535211267606
+"339",210429,"Western Oregon University","Black.or.African.American.total..S2012_IS_RV..Instructional.staff..professors.",1,"2012","Black or African American","Professor",71,0.0140845070422535
+"340",210429,"Western Oregon University","Hispanic.or.Latino.total..S2012_IS_RV..Instructional.staff..professors.",4,"2012","Hispanic or Latino","Professor",71,0.0563380281690141
+"341",210429,"Western Oregon University","Native.Hawaiian.or.Other.Pacific.Islander.total..S2012_IS_RV..Instructional.staff..professors.",0,"2012","Native Hawaiian or Other Pacific Islander","Professor",71,0
+"342",210429,"Western Oregon University","White.total..S2012_IS_RV..Instructional.staff..professors.",61,"2012","White","Professor",71,0.859154929577465
+"343",210429,"Western Oregon University","Two.or.more.races.total..S2012_IS_RV..Instructional.staff..professors.",0,"2012","Two or more Races","Professor",71,0
+"344",210429,"Western Oregon University","Race.ethnicity.unknown.total..S2012_IS_RV..Instructional.staff..professors.",2,"2012","Race Ethnicity Unknown","Professor",71,0.028169014084507
+"345",210429,"Western Oregon University","American.Indian.or.Alaska.Native.total..S2012_IS_RV..Instructional.staff..associate.professors.",0,"2012","American Indian or Alaska Native","Associate Professor",44,0
+"346",210429,"Western Oregon University","Asian.total..S2012_IS_RV..Instructional.staff..associate.professors.",0,"2012","Asian","Associate Professor",44,0
+"347",210429,"Western Oregon University","Black.or.African.American.total..S2012_IS_RV..Instructional.staff..associate.professors.",2,"2012","Black or African American","Associate Professor",44,0.0454545454545455
+"348",210429,"Western Oregon University","Hispanic.or.Latino.total..S2012_IS_RV..Instructional.staff..associate.professors.",0,"2012","Hispanic or Latino","Associate Professor",44,0
+"349",210429,"Western Oregon University","Native.Hawaiian.or.Other.Pacific.Islander.total..S2012_IS_RV..Instructional.staff..associate.professors.",0,"2012","Native Hawaiian or Other Pacific Islander","Associate Professor",44,0
+"350",210429,"Western Oregon University","White.total..S2012_IS_RV..Instructional.staff..associate.professors.",39,"2012","White","Associate Professor",44,0.886363636363636
+"351",210429,"Western Oregon University","Two.or.more.races.total..S2012_IS_RV..Instructional.staff..associate.professors.",0,"2012","Two or more Races","Associate Professor",44,0
+"352",210429,"Western Oregon University","Race.ethnicity.unknown.total..S2012_IS_RV..Instructional.staff..associate.professors.",1,"2012","Race Ethnicity Unknown","Associate Professor",44,0.0227272727272727
+"353",210429,"Western Oregon University","American.Indian.or.Alaska.Native.total..S2012_IS_RV..Instructional.staff..assistant.professors.",0,"2012","American Indian or Alaska Native","Assistant Professor",54,0
+"354",210429,"Western Oregon University","Asian.total..S2012_IS_RV..Instructional.staff..assistant.professors.",1,"2012","Asian","Assistant Professor",54,0.0185185185185185
+"355",210429,"Western Oregon University","Black.or.African.American.total..S2012_IS_RV..Instructional.staff..assistant.professors.",1,"2012","Black or African American","Assistant Professor",54,0.0185185185185185
+"356",210429,"Western Oregon University","Hispanic.or.Latino.total..S2012_IS_RV..Instructional.staff..assistant.professors.",3,"2012","Hispanic or Latino","Assistant Professor",54,0.0555555555555556
+"357",210429,"Western Oregon University","Native.Hawaiian.or.Other.Pacific.Islander.total..S2012_IS_RV..Instructional.staff..assistant.professors.",0,"2012","Native Hawaiian or Other Pacific Islander","Assistant Professor",54,0
+"358",210429,"Western Oregon University","White.total..S2012_IS_RV..Instructional.staff..assistant.professors.",45,"2012","White","Assistant Professor",54,0.833333333333333
+"359",210429,"Western Oregon University","Two.or.more.races.total..S2012_IS_RV..Instructional.staff..assistant.professors.",0,"2012","Two or more Races","Assistant Professor",54,0
+"360",210429,"Western Oregon University","Race.ethnicity.unknown.total..S2012_IS_RV..Instructional.staff..assistant.professors.",0,"2012","Race Ethnicity Unknown","Assistant Professor",54,0
+"361",210429,"Western Oregon University","American.Indian.or.Alaska.Native.total..S2012_IS_RV..Instructional.staff..instructors.",0,"2012","American Indian or Alaska Native","Instructor",34,0
+"362",210429,"Western Oregon University","Asian.total..S2012_IS_RV..Instructional.staff..instructors.",1,"2012","Asian","Instructor",34,0.0294117647058824
+"363",210429,"Western Oregon University","Black.or.African.American.total..S2012_IS_RV..Instructional.staff..instructors.",0,"2012","Black or African American","Instructor",34,0
+"364",210429,"Western Oregon University","Hispanic.or.Latino.total..S2012_IS_RV..Instructional.staff..instructors.",2,"2012","Hispanic or Latino","Instructor",34,0.0588235294117647
+"365",210429,"Western Oregon University","Native.Hawaiian.or.Other.Pacific.Islander.total..S2012_IS_RV..Instructional.staff..instructors.",0,"2012","Native Hawaiian or Other Pacific Islander","Instructor",34,0
+"366",210429,"Western Oregon University","White.total..S2012_IS_RV..Instructional.staff..instructors.",29,"2012","White","Instructor",34,0.852941176470588
+"367",210429,"Western Oregon University","Two.or.more.races.total..S2012_IS_RV..Instructional.staff..instructors.",1,"2012","Two or more Races","Instructor",34,0.0294117647058824
+"368",210429,"Western Oregon University","Race.ethnicity.unknown.total..S2012_IS_RV..Instructional.staff..instructors.",1,"2012","Race Ethnicity Unknown","Instructor",34,0.0294117647058824
+"369",210429,"Western Oregon University","American.Indian.or.Alaska.Native.total..S2012_IS_RV..Instructional.staff..lecturers.",0,"2012","American Indian or Alaska Native","Lecturer",4,0
+"370",210429,"Western Oregon University","Asian.total..S2012_IS_RV..Instructional.staff..lecturers.",0,"2012","Asian","Lecturer",4,0
+"371",210429,"Western Oregon University","Black.or.African.American.total..S2012_IS_RV..Instructional.staff..lecturers.",0,"2012","Black or African American","Lecturer",4,0
+"372",210429,"Western Oregon University","Hispanic.or.Latino.total..S2012_IS_RV..Instructional.staff..lecturers.",0,"2012","Hispanic or Latino","Lecturer",4,0
+"373",210429,"Western Oregon University","Native.Hawaiian.or.Other.Pacific.Islander.total..S2012_IS_RV..Instructional.staff..lecturers.",0,"2012","Native Hawaiian or Other Pacific Islander","Lecturer",4,0
+"374",210429,"Western Oregon University","White.total..S2012_IS_RV..Instructional.staff..lecturers.",3,"2012","White","Lecturer",4,0.75
+"375",210429,"Western Oregon University","Two.or.more.races.total..S2012_IS_RV..Instructional.staff..lecturers.",1,"2012","Two or more Races","Lecturer",4,0.25
+"376",210429,"Western Oregon University","Race.ethnicity.unknown.total..S2012_IS_RV..Instructional.staff..lecturers.",0,"2012","Race Ethnicity Unknown","Lecturer",4,0
+"377",210429,"Western Oregon University","American.Indian.or.Alaska.Native.total..S2012_IS_RV..Instructional.staff..no.academic.rank.",0,"2012","American Indian or Alaska Native","No Academic Rank ",2,0
+"378",210429,"Western Oregon University","Asian.total..S2012_IS_RV..Instructional.staff..no.academic.rank.",0,"2012","Asian","No Academic Rank ",2,0
+"379",210429,"Western Oregon University","Black.or.African.American.total..S2012_IS_RV..Instructional.staff..no.academic.rank.",0,"2012","Black or African American","No Academic Rank ",2,0
+"380",210429,"Western Oregon University","Hispanic.or.Latino.total..S2012_IS_RV..Instructional.staff..no.academic.rank.",0,"2012","Hispanic or Latino","No Academic Rank ",2,0
+"381",210429,"Western Oregon University","Native.Hawaiian.or.Other.Pacific.Islander.total..S2012_IS_RV..Instructional.staff..no.academic.rank.",0,"2012","Native Hawaiian or Other Pacific Islander","No Academic Rank ",2,0
+"382",210429,"Western Oregon University","White.total..S2012_IS_RV..Instructional.staff..no.academic.rank.",2,"2012","White","No Academic Rank ",2,1
+"383",210429,"Western Oregon University","Two.or.more.races.total..S2012_IS_RV..Instructional.staff..no.academic.rank.",0,"2012","Two or more Races","No Academic Rank ",2,0
+"384",210429,"Western Oregon University","Race.ethnicity.unknown.total..S2012_IS_RV..Instructional.staff..no.academic.rank.",0,"2012","Race Ethnicity Unknown","No Academic Rank ",2,0
