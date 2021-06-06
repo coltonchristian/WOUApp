@@ -285,7 +285,7 @@ server <- function(input, output) {
             theme_minimal() + 
             minimaltheme})
     
-    output$plot_enrollment = renderPlot(plot_reactive_enrollment())
+    output$plot_enrollment = renderPlot(plot_reactive_enrollment(), height =400, width = 700)
     
     output$downloadenrollmentData <- downloadHandler(
         filename = function() {
@@ -299,7 +299,7 @@ server <- function(input, output) {
     output$downloadenrollmentPlot <- downloadHandler(
         filename = function() { paste('plot-enrollment-',  input$Year, "_", Sys.Date(), '.png', sep='') },
         content = function(file) {
-            ggsave(plot = plot_reactive_enrollment(), file,  device = "png")
+            ggsave(plot = plot_reactive_enrollment(), file,  device = "png", height = 4, width = 7, units = "in")
         }
     )
     
@@ -322,7 +322,7 @@ server <- function(input, output) {
             theme_minimal() + 
             minimaltheme})
     
-    output$plot_majors = renderPlot(plot_reactive_majors())
+    output$plot_majors = renderPlot(plot_reactive_majors(), height =400, width = 700)
     
     output$downloadmajorsData <- downloadHandler(
         filename = function() {
@@ -336,7 +336,7 @@ server <- function(input, output) {
     output$downloadmajorsPlot <- downloadHandler(
         filename = function() { paste('plot-majors-', input$Year2, "-", input$Major, "_", Sys.Date(), '.png', sep='') },
         content = function(file) {
-            ggsave(plot = plot_reactive_majors(), file,  device = "png")
+            ggsave(plot = plot_reactive_majors(), file,  device = "png", height = 4, width = 7, units = "in")
         }
     )
     
@@ -358,7 +358,7 @@ server <- function(input, output) {
             theme_minimal() + 
             minimaltheme})
     
-    output$plot_completers = renderPlot(plot_reactive_completers())
+    output$plot_completers = renderPlot(plot_reactive_completers(), height =400, width = 700)
     
     output$downloadcompletersData <- downloadHandler(
         filename = function() {
@@ -372,7 +372,7 @@ server <- function(input, output) {
     output$downloadcompletersPlot <- downloadHandler(
         filename = function() { paste('plot-completers-', input$Year4, "_",  Sys.Date(), '.png', sep='') },
         content = function(file) {
-            ggsave(plot = plot_reactive_completers(), file,  device = "png")
+            ggsave(plot = plot_reactive_completers(), file,  device = "png", height = 4, width = 7, units = "in")
         }
     )
     
@@ -393,7 +393,7 @@ server <- function(input, output) {
             theme_minimal() + 
             minimaltheme})
     
-    output$plot_graduates = renderPlot(plot_reactive_graduates())
+    output$plot_graduates = renderPlot(plot_reactive_graduates(), height =400, width = 700)
     
     output$downloadgraduatesData <- downloadHandler(
         filename = function() {
@@ -407,7 +407,7 @@ server <- function(input, output) {
     output$downloadgraduatesPlot <- downloadHandler(
         filename = function() { paste('plot-graduates-', input$Year3, "_", Sys.Date(), '.png', sep='') },
         content = function(file) {
-            ggsave(plot = plot_reactive_graduates(), file,  device = "png")
+            ggsave(plot = plot_reactive_graduates(), file,  device = "png", height = 4, width = 7, units = "in")
         }
     )
     
@@ -429,7 +429,7 @@ server <- function(input, output) {
             theme_minimal() + 
             minimaltheme})
     
-    output$plot_faculty = renderPlot(plot_reactive_faculty())
+    output$plot_faculty = renderPlot(plot_reactive_faculty(), height =400, width = 700)
     
     output$downloadfacultyData <- downloadHandler(
         filename = function() {
@@ -443,7 +443,7 @@ server <- function(input, output) {
     output$downloadfacultyPlot <- downloadHandler(
         filename = function() { paste('plot-faculty-', input$Year5, "-", input$Rank, "_", Sys.Date(), '.png', sep='') },
         content = function(file) {
-            ggsave(plot = plot_reactive_faculty(), file,  device = "png")
+            ggsave(plot = plot_reactive_faculty(), file,  device = "png", height = 4, width = 7, units = "in")
         }
     )
 }
