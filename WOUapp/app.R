@@ -14,7 +14,7 @@ minimaltheme =
           plot.title = element_text(hjust = 0.5),
           plot.caption=element_text(hjust = 0))
 
- setwd("C:/Users/Colton/Desktop/WOUApp/WOUapp")
+ #setwd("C:/Users/Colton/Desktop/WOUApp/WOUapp")
 
 #### Pull in cleaned up data files downloaded from IPEDS and ACS #### 
 
@@ -371,7 +371,7 @@ server <- function(input, output) {
             geom_line(aes(group = race)) +
             geom_point(aes(color = source)) +
             geom_text(aes(x = percent + 3, y = race, label = ifelse(sig < .05, "*", ""))) +
-            scale_color_manual(values = c("blue", "black")) +
+            scale_color_manual(breaks = c("demographics", "enrollment"), values = c("blue", "black")) +
             scale_x_continuous(breaks = seq(0, 100, 10), limits = c(0,100)) +
             ggtitle("Enrollment") +
             labs(caption = "Note: Asterisks correspond to significant (p < .05) two-proportion Z-tests.")+
@@ -413,7 +413,7 @@ server <- function(input, output) {
             geom_line(aes(group = race)) +
             geom_point(aes(color = source)) +
             geom_text(aes(x = percent + 3, y = race, label = ifelse(sig < .05, "*", ""))) +
-            scale_color_manual(values = c("blue", "black")) +
+            scale_color_manual(breaks = c("enrollment", "major"), values = c("blue", "black")) +
             scale_x_continuous(breaks = seq(0, 100, 10), limits = c(0,100)) +
             ggtitle("Majors") +
             labs(caption = "Note: Asterisks correspond to significant (p < .05) two-proportion Z-tests.")+
@@ -454,7 +454,7 @@ server <- function(input, output) {
             geom_line(aes(group = race)) +
             geom_point(aes(color = source)) +
             geom_text(aes(x = percent + 3, y = race, label = ifelse(sig < .05, "*", ""))) +
-            scale_color_manual(values = c("blue", "black")) +
+            scale_color_manual(breaks = c("enrollment", "completers"), values = c("blue", "black")) +
             scale_x_continuous(breaks = seq(0, 100, 10), limits = c(0,100)) +
             ggtitle("Completers") +
             labs(caption = "Note: Asterisks correspond to significant (p < .05) two-proportion Z-tests.")+
@@ -494,7 +494,7 @@ server <- function(input, output) {
             geom_line(aes(group = race)) +
             geom_point(aes(color = source)) +
             geom_text(aes(x = percent + 3, y = race, label = ifelse(sig < .05, "*", ""))) +
-            scale_color_manual(values = c("blue", "black")) +
+            scale_color_manual(breaks = c("enrollment", "graduates"), values = c("blue", "black")) +
             scale_x_continuous(breaks = seq(0, 100, 10), limits = c(0,100)) +
             ggtitle("Graduates") +
             labs(caption = "Note: Asterisks correspond to significant (p < .05) two-proportion Z-tests.")+
@@ -535,7 +535,7 @@ server <- function(input, output) {
             geom_line(aes(group = race)) +
             geom_point(aes(color = source)) +
             geom_text(aes(x = percent + 3, y = race, label = ifelse(sig < .05, "*", ""))) +
-            scale_color_manual(values = c("blue", "black")) +
+            scale_color_manual(breaks = c("demographics", "faculty"), values = c("blue", "black")) +
             scale_x_continuous(breaks = seq(0, 100, 10), limits = c(0,100)) +
             ggtitle("Faculty") +
             labs(caption = "Note: Asterisks correspond to significant (p < .05) two-proportion Z-tests.")+
