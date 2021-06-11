@@ -97,8 +97,6 @@ mainPanel(
                                    "Data Dashboard:", tags$a(href="https://coltonchristian.shinyapps.io/wouapp/", "coltonchristian.shinyapps.io/wouapp"),
                                    br(), 
                                    "Code:", tags$a(href="https://github.com/coltonchristian/WOUapp", "github.com/coltonchristian/WOUapp"),
-                                   br(),
-                                   "Slides:", tags$a(href="http://www.rstudio.com", "Data Dashboard"),
                                    
                                    h2("Background"),
                                    
